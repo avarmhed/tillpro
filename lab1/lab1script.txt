@@ -1,0 +1,7 @@
+cd: /Users/Albin/PycharmProjects/tillpro/lab1
+
+2-2.6 Se filerna p1.a.py -> p1.d.py
+
+3. Kör filen:
+Kompilera med: gcc p1.21.c
+Exekvera med: ./a.out

@@ -1,0 +1,90 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+
+struct nod {
+    char name[30];
+    int tel;
+    struct nod * next;
+    struct nod * prev;
+};
+typedef struct nod Nod;
+
+void insertnod(Nod ** padr, Nod * tobeadded)
+{
+    if(*padr == NULL)
+    {   // list is empty!
+        tobeadded->next = NULL;
+        tobeadded->prev = NULL;
+    }else{  // add new node to existing list
+        (*padr)->prev = tobeadded;
+        tobeadded->next = *padr;
+    }
+
+    (*padr) = tobeadded;
+}
+
+void removenod(Nod ** padr, Nod * toberemoved)
+{
+    // 3 cases: 1. removing first member of list, 2. removing last member, 3. any in between
+
+    if(toberemoved->prev == NULL)
+    {
+        // removing first member of list. relink apdr to next, then remove
+        (*padr) = toberemoved->next;
+    }else if(toberemoved->next == NULL)
+    {
+        // removing last member of list. NULL next-pointer of prev member
+        (toberemoved->prev)->next = NULL;
+    }else
+    {
+        //find next and prev node:
+        Nod * prevnode = toberemoved->prev;
+        Nod * nextnode = toberemoved->next;
+
+        // link prev node to next node and vice versa, uncoupling toberemoved
+        prevnode->next = nextnode;
+        nextnode->prev = prevnode;
+    }
+
+    // we can now remove the node.
+    free(toberemoved);
+}
+
+void printnod(Nod * p)
+{
+    printf("Name: %s - Number: %d\n", p->name, p->tel);
+}
+
+void printlist(Nod * p)
+{
+    // TO DO: Check if we are at the beginning of the list
+    // Some prints to make it pretty:
+    printf("Displaying the linked list:\n");
+    printf("---------------------------\n");
+
+    Nod * curNode = p;  // curNode for loop
+    while(1)    // loop until break;
+    {
+        printf("Name: %s - Number: %d\n", curNode->name, curNode->tel);
+
+        curNode = curNode->next;
+        if (curNode == NULL) break;         // if it's NULL, we've reached the end of the list
+    }
+}
+
+Nod * search(Nod * p, int tel)
+{
+    // search from beginning (assume we get the first node)
+    for (Nod * curNode = p; curNode != NULL; curNode = curNode->next)
+    {
+        if(curNode->tel == tel)
+        {
+            return curNode;
+            break;
+        }
+    }
+
+    return NULL; // no result
+}

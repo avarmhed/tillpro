@@ -1,0 +1,2601 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="application-name" content="TimeEdit"/> 
+<meta name="msapplication-TileColor" content="#0E5C67"/> 
+<meta name="msapplication-TileImage" content="/static/7.08_1949/iepinned.png"/>
+<link rel="icon" type="image/png" href="/static/7.08_1949/iepinned.png"/>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="theme-color" content="#0E5C67"/><meta id="iosviewport" name = "viewport" content = "width = 480, user-scalable=no, user-scalable=0">
+<title>TimeEdit Kungliga Tekniska högskolan - DD1321, Tillämpad programmering och data...</title>
+<link rel="stylesheet" href="/static/7.08_1949/css/min.css" type="text/css">
+
+
+
+    <style type="text/css">
+        #texttable, .text { font-size: 13px;  }
+        .t { font-size: 14px; }
+        .map { height: 19px; width: 19px; }
+        .restable td { line-height: 20px; }
+        .restable .box td { line-height: normal; position: static; }
+        .tBottom {  border-width: 0 20px 20px 0; }
+        .cNone { background: white; }
+        .weekColumn { width: 28px; }
+        .customTitleObjects, .mleft { padding-left: 2.8em; }
+        .customTitleObjects { padding-top: 1em; padding-bottom: 1em; }
+        .c-80 { border: 1px dotted #555 !important; border-left-width: 0 !important; border-right-width: 0 !important; }
+        .statusrequested { border: 1px dotted #555 !important; border-right-width: 0 !important; }
+        
+        
+        
+        .cA { background: rgba(192,252,255,0.95) !important; border-color: #4F8081; }
+.c-55 { background: rgba(255,215,207,0.5) !important; border-color: #FFD7CF; }
+.c-70 { background: #B2B4B4 !important;}
+
+
+.c0 { background-color: rgba(210,212,212,0.5) !important; background: rgba(210,212,212,0.5) !important;}
+.c1 { background-color: rgba(172,218,148,0.5) !important; background: rgba(172,218,148,0.5) !important;}
+.c2 { background-color: rgba(255,254,231,0.5) !important; background: rgba(255,254,231,0.5) !important;}
+.c3 { background-color: rgba(147,185,238,0.5) !important; background: rgba(147,185,238,0.5) !important;}
+.c4 { background-color: rgba(216,205,225,0.5) !important; background: rgba(216,205,225,0.5) !important;}
+.c5 { background-color: rgba(199,235,224,0.5) !important; background: rgba(199,235,224,0.5) !important;}
+.c6 { background-color: rgba(246,180,81,0.5) !important; background: rgba(246,180,81,0.5) !important;}
+.c7 { background-color: rgba(249,152,131,0.5) !important; background: rgba(249,152,131,0.5) !important;}
+.c8 { background-color: rgba(170,216,232,0.5) !important; background: rgba(170,216,232,0.5) !important;}
+.c9 { background-color: rgba(255,234,150,0.5) !important; background: rgba(255,234,150,0.5) !important;}
+.c10 { background-color: rgba(250,214,222,0.5) !important; background: rgba(250,214,222,0.5) !important;}
+.c11 { background-color: rgba(216,231,53,0.5) !important; background: rgba(216,231,53,0.5) !important;}
+.c12 { background-color: rgba(171,167,125,0.5) !important; background: rgba(171,167,125,0.5) !important;}
+.c13 { background-color: rgba(200,112,112,0.5) !important; background: rgba(200,112,112,0.5) !important;}
+.c14 { background-color: rgba(201,255,146,0.5) !important; background: rgba(201,255,146,0.5) !important;}
+.c15 { background-color: rgba(230,181,219,0.5) !important; background: rgba(230,181,219,0.5) !important;}
+.c16 { background-color: rgba(219,192,163,0.5) !important; background: rgba(219,192,163,0.5) !important;}
+.c17, .c101 { background-color: rgba(172,218,148,0.5) !important; background: rgba(172,218,148,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #598541 !important; }
+.c18, .c102 { background-color: rgba(255,254,231,0.5) !important; background: rgba(255,254,231,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #C4B311 !important; }
+.c19, .c103 { background-color: rgba(147,185,238,0.5) !important; background: rgba(147,185,238,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #4D74AC !important; }
+.c20, .c104 { background-color: rgba(216,205,225,0.5) !important; background: rgba(216,205,225,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #9572B1 !important; }
+.c21, .c105 { background-color: rgba(199,235,224,0.5) !important; background: rgba(199,235,224,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #41B190 !important; }
+.c22, .c106 { background-color: rgba(246,180,81,0.5) !important; background: rgba(246,180,81,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #CA7A03 !important; }
+.c23, .c107 { background-color: rgba(249,152,131,0.5) !important; background: rgba(249,152,131,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #E35435 !important; }
+.c24, .c108 { background-color: rgba(170,216,232,0.5) !important; background: rgba(170,216,232,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #4A8DA4 !important; }
+.c25, .c109 { background-color: rgba(255,234,150,0.5) !important; background: rgba(255,234,150,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #D0A900 !important; }
+.c26, .c110 { background-color: rgba(250,214,222,0.5) !important; background: rgba(250,214,222,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #D76D85 !important; }
+.c27, .c111 { background-color: rgba(216,231,53,0.5) !important; background: rgba(216,231,53,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #99A700 !important; }
+.c28, .c112 { background-color: rgba(171,167,125,0.5) !important; background: rgba(171,167,125,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #68633C !important; }
+.c29, .c113 { background-color: rgba(200,112,112,0.5) !important; background: rgba(200,112,112,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #8C3535 !important; }
+.c30, .c114 { background-color: rgba(201,255,146,0.5) !important; background: rgba(201,255,146,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #66B514 !important; }
+.c31, .c115 { background-color: rgba(230,181,219,0.5) !important; background: rgba(230,181,219,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #BF65AB !important; }
+.c32, .c116 { background-color: rgba(219,192,163,0.5) !important; background: rgba(219,192,163,0.5) repeating-linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1) 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px) !important; border-color: #AE875E !important; }
+.c10 001 { background-color: rgba(108,175,182,0.5) !important; background: rgba(108,175,182,0.5) !important;}
+.c10 002 { background-color: rgba(147,185,238,0.5) !important; background: rgba(147,185,238,0.5) !important;}
+.c10 003 { background-color: rgba(249,152,131,0.5) !important; background: rgba(249,152,131,0.5) !important;}
+.c11 001 { background-color: rgba(40,45,45,0.5) !important; background: rgba(40,45,45,0.5) !important;}
+.c11 002 { background-color: rgba(210,212,212,0.5) !important; background: rgba(210,212,212,0.5) !important;}
+.c12 001 { background-color: rgba(243,243,243,0.5) !important; background: rgba(243,243,243,0.5) !important;}
+.c12 002 { background-color: rgba(255,215,207,0.5) !important; background: rgba(255,215,207,0.5) !important;}
+.c12 003 { background-color: rgba(255,246,210,0.5) !important; background: rgba(255,246,210,0.5) !important;}
+.c13 001 { background-color: rgba(205,226,228,0.5) !important; background: rgba(205,226,228,0.5) !important;}
+.c-90 { background:  rgba(40,45,45,0.5) !important; border-color: #0F1818 !important; color: #FFF; }
+.c-95 { background: rgba(205,226,228,0.5) !important; 
+  background-image:
+  radial-gradient(rgb(273,273,273) 20%, transparent 13%), 
+  radial-gradient(rgb(273,273,273) 20%, transparent 13%) !important;
+  background-size: 12px 12px !important;
+  background-position: 0px 0px, 6px 6px !important;
+  border-color: #156F79 !important;
+  color: #0F1818;
+}
+.multicolor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 16px;
+}
+.c-100 { background: rgba(108,175,182,0.5) !important;  }
+.c12345, .c-80 
+{ background-color: #FFF !important; background: rgba(255,255,255,0.8) !important;  }
+.cNone, .c-2
+{ background-color: #FFF !important; background: rgba(255,255,255,0.8) !important; }
+.strikecancelled, .c-70, .statusrejected {
+   background: #B2B4B4 !important;
+   color: #FFF;
+   border-color: #B2B4B4; 
+}
+.timeDiv.strikecancelled {
+ background-image: none !important;
+ text-decoration: line-through; 
+}
+
+.maplink { color: #696969; }
+.desktop .maplink:hover, .desktop .maplink:hover > .maplink { color: #3C3C3C; }
+    </style>
+  </head>
+<body class=" theme2">
+<div class="overlay" id="tipsoverlay" onclick="hideTips();return false;"></div>
+
+
+
+<span class="hidden" id="links_base" data-base="https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal"></span>
+<div id="header" class="ui-widget-header">
+<div id="pageHeader" class="pageHeader t4">
+<div class="wrapcentertop">
+
+<ul id="jsddm">
+    <li id="pageMenuButtonItem" class="pageMenuButton ac">
+    	<a href="javascript:void(0)" id="pageMenuButtonLink" class="pageMenu hoverlink">Konto</a>
+        <ul id="pageHeaderMenuList" class="ui-state-default">
+                
+            <li><a id="loginbutton" href="?loginpost=true" onclick="javascript:updateLogin()">Logga in</a></li>
+            
+            
+            <li><a href="#inlineAbout" id="showtech">Om TimeEdit</a></li>
+            
+        </ul>
+    </li>
+</ul>
+
+
+<div class="ohfixed">
+<a href="/kth/web/?en=t" class="pageHeaderLogo"><img src="/static/7.08_1949/te_icon_white.svg" width="32" height="32" alt="TimeEdit"></a>
+<a href="/kth/web/?en=t" class="pageHeaderLink nohover customerName">Kungliga Tekniska högskolan</span>
+</a>
+</div>
+</div>
+
+<div class="pageHeaderNav">
+<div class="wrapcentertop ac">
+<a href="/kth/web/?en=t" class="pageNav"><span class="pageHeaderProfile">Kungliga Tekniska högskolan </span></a>
+<span class="pageNav pageHeaderProfile">&nbsp; / &nbsp;</span><a href="/kth/web/public01/" class="pageNav pageHeaderCrum">Sök schema / search time tables </a>
+<span class="pageNav">&nbsp; / &nbsp;</span>
+<span class="pageHeaderCrum pageHeaderCurrent ac">Schema (på svenska)</span>
+<div class="clearBoth"></div>
+</div>
+</div>
+
+<div class="hidden">
+<div id="techinfo" data-copy="Kopiera" data-about="Om TimeEdit" data-info="TE Viewer &#13;User: _web_public01, 29, _web_public01">
+</div>
+<div id="inlineAbout">
+<textarea id="abouttext"spellcheck="false" data-defaultLocale="sv_SE" data-url="/kth/web/serverversion" data-info-url="/kth/web/timeedit/p/public01/info">
+Version: 7.08 Date: 20200204 1949 Build: 7.08  M libs/timeedit_met! APIMethods: b4c63f9. API: fc29463. Auth: ad7a9f4 MM src/se/timeedit/a!
+</textarea>
+</div>
+
+<div id="inlineSupport" class="fancypadd">
+    <div class="zonetitle greenw">Support</div>
+</div>
+</div>
+</div>
+<div id="pageHeaderOverlay" class="overlay hidden"></div>     <a class="leftHeader clickable btr btrFirst ac" href="https://cloud.timeedit.net/kth/web/public01/ri1f7XY177ZZ89QvZl07Z560yWYQ35WqX5aQQQ1QpY2o6965PWblnxwju.html"><span>Idag</span><div class="help">Gå till idag</div></a>
+     <a class="leftHeader clickable btr  leftHeaderWeek iosinvisible ac" href="https://cloud.timeedit.net/kth/web/public01/ri15o01Z050Z5QQ6396787Q0yl0Q6Wp7Z0961Q0Q5625qZl6157YWw6a66WPjWbxXnu.html"><span class="btrLeft">&nbsp;</span><div class="help">Gå till föregående vecka</div></a>
+     <span class="leftHeader leftHeaderSmall leftHeaderWeek iosinvisible ac">v 8</span>
+     <a class="leftHeader clickable btr  leftHeaderWeek iosinvisible ac" href="https://cloud.timeedit.net/kth/web/public01/ri16o05Z058Z0QQ6396787Q0yl0Q6Wp7Z0961Q0Q5625qZl7157YWw6a66WPjWbxXnu.html"><span class="btrRight">&nbsp;</span><div class="help">Gå till nästa vecka</div></a>
+     <a class="leftHeader clickable openRangeButton ac" id="openStartRangeButton" href="#searchDivContent" data-objectid="">
+     <span>Nu</span>
+     <div class="help">Ändra startdatum</div>
+     </a>
+     <span class="leftHeader leftHeaderSmall ac">-</span>
+     <a class="leftHeader clickable openRangeButton ac" id="openEndRangeButton" href="#searchDivContent" data-objectid="">
+      <span>2020-02-27</span>
+      
+     <div class="help">Ändra slutdatum</div>
+     </a>
+  <div class="rightHeader clickable tabSwitcher  ac"><span class="tesprite tesprite-gear tespriteinlineblock"></span><span class="ht">Anpassa</span><div class="help">Anpassa</div></div>
+
+  <a href="#" data-target="filter" class="clickable rightHeader printlink ac"><span class="tesprite tesprite-content tespriteinlineblock"></span><span class="ht">Filter</span><div class="help">Filter</div></a>
+  <a href="#" data-target="exporter" class="clickable rightHeader printlink ac"><span class="tesprite tesprite-download tespriteinlineblock"></span><span class="ht">Ladda ner</span><div class="help">Ladda ner</div></a>
+
+	     <a href="#iCalDialogContent" class="iCalDialog clickable rightHeader ac iosinvisible"><span class="tesprite tesprite-date tespriteinlineblock"></span><span class="ht">Prenumerera</span><div class="help">Prenumerera</div></a>
+	 <a class="leftHeader clickable openSearchButton ac" id="openSearchButton" href="#searchDivContent" data-objectid="">
+     <span class="tesprite tesprite-search tespritefloatleft changesearchtext"></span>
+     <span class="lightlink"><span>Ändra sökning</span></span>
+     <span id="searchTextWide"> &nbsp; DD1321, Tillämpad programmering och datalogi</span>
+     <div class="help">Ändra sökning</div>
+      </a>
+  <br class="clearBoth">
+</div>
+<div id="topbar"></div>
+
+<div class="overlay" id="headlineTimeOverlay" style="display:none;"></div>
+<div class="overlay" id="datePickTimeOverlay" style="z-index:1300; display:none;"></div>
+<div id="headerPadder" class="clearBoth" style="height:128px">&nbsp;</div>
+      <div id="dateRange" class="ui-corner-all rangePickWrap smallScreenRangePick hidden topmenu">
+          <div class="quickperiodwrap">
+          
+          <div class="hidden"><label><input type="checkbox" id="fullweeksCheckbox" checked="checked">Utöka vald period till hela veckor</label></div>
+          
+          </div>
+          <div class="rangePick rangePickStart" data-date="20200221">
+            <div class="rangePickHeader hidden">Start <span id="rangeStartNice">Nu</span><input READONLY type="text" class="hidden" id="txtRangeAltStart" value="20200221">
+             <input type="button" class="hidden" id="rangeTypeButtonStart" data-paramtext="0.m" value="Från idag" data-first="Kalender" data-second="Från idag"> 
+            </div>
+            <div id="flipStart" data-isRel="t">
+	            <div id="txtRangeStart" data-date="20200221"></div>
+	            <div id="txtRangeRelativeStart"><div class="ui-widget ui-widget-content ui-helper-clearfix ui-corner-all rangeRel ui-datepicker-inline">
+	            <div class="ui-widget-header ui-helper-clearfix ui-corner-all rangeTitle">Rullande start</div>
+<select class="te-ui-select ui-corner-all valueselect hidden" id="periodvaluestartRange" name="periodstartRange">
+		<option value="619" SELECTED>Nu</option>
+	
+		<option value="0" >Innevarande</option>
+		<option value="1" >1</option>
+		<option value="2" >2</option>
+		<option value="3" >3</option>
+		<option value="4" >4</option>
+		<option value="5" >5</option>
+	<option value="-1" >-1</option><option value="-2" >-2</option><option value="-3" >-3</option><option value="-4" >-4</option><option value="-5" >-5</option><option value="-6" >-6</option>
+</select>
+<div class="ui-widget-header datepicktop">
+<select class="te-ui-select ui-corner-all timeselect" id="periodtimestartRange" name="periodstartRange">
+<option value="n"  data-plur="månader" data-sing="månad">månader</option><option value="w"  data-plur="veckor" data-sing="vecka">veckor</option><option value="d"  data-plur="dagar" data-sing="dag">dagar</option><option value="h"  data-plur="timmar" data-sing="timme">timmar</option>
+
+</select>
+</div>
+  <div class="ui-datepicker ui-widget ui-helper-clearfix" style="display: block;">
+    <table class="ui-datepicker-calendar picktable">
+    <tbody>
+	<tr>
+	   
+	   <td onclick="selectPeriod('#periodvaluestartRange',-1);return false;"><a class="ui-state-default" href="#">-1</a></td>
+	   
+	   <td onclick="selectPeriod('#periodvaluestartRange',-2);return false;"><a class="ui-state-default" href="#">-2</a></td>
+	   
+	   <td onclick="selectPeriod('#periodvaluestartRange',-3);return false;"><a class="ui-state-default" href="#">-3</a></td>
+	   
+	   <td onclick="selectPeriod('#periodvaluestartRange',-4);return false;"><a class="ui-state-default" href="#">-4</a></td>
+	   
+	   <td onclick="selectPeriod('#periodvaluestartRange',-5);return false;"><a class="ui-state-default" href="#">-5</a></td>
+	   
+	   <td onclick="selectPeriod('#periodvaluestartRange',-6);return false;"><a class="ui-state-default" href="#">-6</a></td>
+	</tr>
+	<tr>
+	   
+	   <td class="" onclick="selectPeriod('#periodvaluestartRange',0);return false;"><a class="ui-state-default ui-state-active" href="#">+0</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvaluestartRange',1);return false;"><a class="ui-state-default" href="#">+1</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvaluestartRange',2);return false;"><a class="ui-state-default" href="#">+2</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvaluestartRange',3);return false;"><a class="ui-state-default" href="#">+3</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvaluestartRange',4);return false;"><a class="ui-state-default" href="#">+4</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvaluestartRange',5);return false;"><a class="ui-state-default" href="#">+5</a></td>
+    </tr>
+    <tr><td colspan="8"> &nbsp; </td></tr>
+    <tr><td colspan="8" onclick="selectPeriod('#periodvaluestartRange',619);return false;"><a class="button" href="#">Starttidpunkt: nu</a></td></tr>
+    </tbody>
+    </table>
+  </div>
+	            </div></div>
+            </div>
+            <a class="datepickbottom flip flipStartButton clickable" href="javascript:void(0)" data-first="Rullande start"  data-second="Kalender">Rullande start</a>
+          </div>
+          <div class="rangePick rangePickEnd">
+            <div class="rangePickHeader hidden">Slut <span id="rangeEndNice">2020-02-27</span><input READONLY type="text" class="hidden" id="txtRangeAltEnd" value="20200227"> 
+             <input type="button" class="hidden" id="rangeTypeButtonEnd"  data-paramtext="20200227.x" value="Längd"  data-first="Kalender" data-second="Längd"> 
+            </div>
+            <div id="flipEnd" data-isRel="f">
+	            <div id="txtRangeEnd" data-date="20200227"></div>
+	            <div id="txtRangeRelativeEnd"><div class="ui-widget ui-widget-content ui-helper-clearfix ui-corner-all rangeRel ui-datepicker-inline">
+	            <div class="ui-widget-header ui-helper-clearfix ui-corner-all rangeTitle">Rullande slut</div>
+<select class="te-ui-select ui-corner-all valueselect hidden" id="periodvalueendRange" name="periodendRange">
+	
+		<option value="0" >Hel</option>
+		<option value="1" >1</option>
+		<option value="2" >2</option>
+		<option value="3" >3</option>
+		<option value="4" >4</option>
+		<option value="5" >5</option>
+		<option value="6" >6</option>
+		<option value="7" >7</option>
+		<option value="8" >8</option>
+		<option value="9" >9</option>
+		<option value="10" >10</option>
+		<option value="11" >11</option>
+		<option value="12" >12</option>
+	
+</select>
+<div class="ui-widget-header datepicktop">
+<select class="te-ui-select ui-corner-all timeselect" id="periodtimeendRange" name="periodendRange">
+<option value="n"  data-plur="månader" data-sing="månad">månader</option><option value="w" SELECTED data-plur="veckor" data-sing="vecka">veckor</option><option value="d"  data-plur="dagar" data-sing="dag">dagar</option><option value="h"  data-plur="timmar" data-sing="timme">timmar</option>
+
+</select>
+</div>
+  <div class="ui-datepicker ui-widget ui-helper-clearfix" style="display: block;">
+    <table class="ui-datepicker-calendar picktable">
+    <tbody>
+	<tr>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',0);return false;"><a class="ui-state-default" href="#">+0</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',1);return false;"><a class="ui-state-default" href="#">+1</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',2);return false;"><a class="ui-state-default" href="#">+2</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',3);return false;"><a class="ui-state-default" href="#">+3</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',4);return false;"><a class="ui-state-default" href="#">+4</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',5);return false;"><a class="ui-state-default" href="#">+5</a></td>
+	   </tr><tr>
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',6);return false;"><a class="ui-state-default" href="#">+6</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',7);return false;"><a class="ui-state-default" href="#">+7</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',8);return false;"><a class="ui-state-default" href="#">+8</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',9);return false;"><a class="ui-state-default" href="#">+9</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',10);return false;"><a class="ui-state-default" href="#">+10</a></td>
+	   
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',11);return false;"><a class="ui-state-default" href="#">+11</a></td>
+	   </tr><tr>
+	   <td class="" onclick="selectPeriod('#periodvalueendRange',12);return false;"><a class="ui-state-default" href="#">+12</a></td>
+    </tr>
+    <tr><td colspan="8"> &nbsp; </td></tr>
+    <tr><td colspan="8" onclick="selectPeriod('#periodvalueendRange',0);return false;"><a class="button" href="#">Slutdatum:Hel</a></td></tr>
+    </tbody>
+    </table>
+  </div>
+	            </div></div>
+            </div>
+            <a class="datepickbottom flip flipEndButton clickable" href="javascript:void(0)" data-first="Rullande slut"  data-second="Kalender">Rullande slut</a>
+          </div>
+         <br class="clearBoth hidden">
+         <div class="rangeButtons hidden">
+         <select id="rangeTypeSelector" style="float:left" class="ui-corner-all basicSelect">
+                  <option value="0" selected>Kalender</option>
+                  <option value="1">Från idag</option>
+                  <option value="2">Idag till datum</option>
+          </select><div>
+                <span id="changeRangeMessage" class="stacktraceError" data-text="Slutdatumet är före startdatumet."></span>
+             </div> <span class="nobr">Datumgränser 2019-08-26 - 2020-07-26</span>
+         </div>
+      </div>
+
+
+<div id="ajaxError" class="hidden"></div>
+
+
+
+
+<span id="linksdata" 
+data-linksbase="https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal" 
+data-sid="7"
+data-lang="sv_SE"
+data-startLimit="20190826"
+data-endLimit="20200726"
+data-timeStep="0"
+data-flip="false"
+data-objectInfoLimited=""
+data-preferedLength="60"
+data-urltitle="DD1321, Tillämpad programmering och data..." 
+data-SaveScheduleName="Ange namnet för denna genväg"
+data-week="v "
+data-RemoveSchedule="Vill du ta bort denna genväg?"
+data-remove="Ta bort"
+data-freeresources="Lediga"
+data-myresources="Senaste bokade objekt"
+data-objectClickable="true"
+data-staticui="/static/7.08_1949/"
+data-searchids="381614.5" 
+data-searchidsenc="381614.5" 
+data-searchnames="DD1321, Tillämpad programmering och datalogi" 
+ 
+class="hidden"></span>
+
+<div class="topmenu"   style="display:none;"   data-showsearch="false"  id="searchDiv">
+<div id="searchDivContent2" class="fancyinside"><div id="objectMover" class="basketMover"></div>
+
+<div class="fancysearchwrap">
+<div class="fancyform fancysearchform">
+
+<h2 class="searchTitle">Sök
+</h2>
+<h2 class="ui-widget-header ui-corner-all adminFieldTableHead searchDivHeader searchAdvanced searchHeaderRow">
+  <div class="searchButtons">
+  <select class="" id="fancytypeselector" name="fancytypeselector" onchange="ObjectsSearcher.fieldSetsChange();">
+     
+       <option value="16" SELECTED>Program/klass</option>
+       <option value="10" >Kurstillfälle</option>
+       <option value="6" >Grupp</option>
+       <option value="4" >Lokal</option>
+       <option value="3" >Personal</option>
+       <option value="9" >Aktivitet</option>
+       <option value="27" >Kansliaktivitet</option>
+       <option value="5" >Kurs</option>
+       <option value="24" >Kund</option>
+       <option value="26" >Förening</option>
+       <option value="21" >Avdelning</option>
+  </select>
+  <input type="search" class="ffinput ffsearchInput objectinputtext" id="ffsearchname" name="fftext" value="" placeholder="Sök" data-search="Sök" data-name="Fritext"/><input class="ffsearchbutton objectsearchbutton objectinputsearchbutton" type="button" title="Sök">
+  <a href="javascript:void(0)" class="clickable hoverlink showFieldsLink t4small hidden" onclick="toggleFields(event)" data-show="yes" data-alt-text="Visa filter">Dölj filter</a>
+  <a class="topclose searchClose" onclick="moveSearchDivBack();return false;"></a>
+  </div>
+</h2>
+<form id="fancyformfieldsearch" name="fancyformfieldsearch" data-loadSelected="f">  
+
+  <fieldset id="ffset16" class="fancyfieldset  fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+                     <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="13" data-param="fe" data-tefieldkind="CATEGORY" data-name="Ägare" name="16_119" data-prefix="119" id="ff16_119">
+          <option value="ABE/Arkitektur och samhällsbyggnad">ABE/Arkitektur och samhällsbyggnad</option>
+          <option value="BIO/Bioteknologi">BIO/Bioteknologi</option>
+          <option value="CBH/Kemi, bioteknologi och hälsa">CBH/Kemi, bioteknologi och hälsa</option>
+          <option value="CHE/Kemivetenskap">CHE/Kemivetenskap</option>
+          <option value="CSC/Datavetenskap och kommunikation">CSC/Datavetenskap och kommunikation</option>
+          <option value="ECE/Teknikvetenskaplig kommunikation och lär§§§">ECE/Teknikvetenskaplig kommunikation och lär...</option>
+          <option value="EECS/Elektroteknik och datavetenskap">EECS/Elektroteknik och datavetenskap</option>
+          <option value="EES/Elektro- och systemteknik">EES/Elektro- och systemteknik</option>
+          <option value="ICT/Informations- och kommunikationsteknik">ICT/Informations- och kommunikationsteknik</option>
+          <option value="ITM/Industriell teknik och management">ITM/Industriell teknik och management</option>
+          <option value="SCI/Teknikvetenskap">SCI/Teknikvetenskap</option>
+          <option value="STH/Teknik och hälsa">STH/Teknik och hälsa</option>
+      </select>
+       </div>
+         <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="7" data-param="fe" data-tefieldkind="CATEGORY" data-name="Årskurs" name="16_61" data-prefix="61" id="ff16_61">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
+       </div>
+         <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="15" data-param="fe" data-tefieldkind="CATEGORY" data-name="Campus" name="16_84" data-prefix="84" id="ff16_84">
+          <option value="AlbaNova">AlbaNova</option>
+          <option value="Campus Kista">Campus Kista</option>
+          <option value="Handelshögskolan">Handelshögskolan</option>
+          <option value="KI Flemingsberg">KI Flemingsberg</option>
+          <option value="KI Solna">KI Solna</option>
+          <option value="Konstfack">Konstfack</option>
+          <option value="KTH Campus">KTH Campus</option>
+          <option value="KTH Flemingsberg">KTH Flemingsberg</option>
+          <option value="KTH Haninge">KTH Haninge</option>
+          <option value="KTH Kista">KTH Kista</option>
+          <option value="KTH Solna">KTH Solna</option>
+          <option value="KTH Södertälje">KTH Södertälje</option>
+          <option value="Lärarhögskolan">Lärarhögskolan</option>
+          <option value="Stockholms Universitet">Stockholms Universitet</option>
+      </select>
+       </div>
+    <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="16" data-basename="Program/klass" data-name="Program/klass" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Program/klass">Lägg till alla: Program/klass</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset10" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+                        <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="189" data-param="fe" data-tefieldkind="CATEGORY" data-name="Avdelningskod" name="10_56" data-prefix="56" id="ff10_56">
+          <option value="ABE/Arkitektur (AD)">ABE/Arkitektur (AD)</option>
+          <option value="ABE/Arkitektur, Fex övr utbildning (ADD)">ABE/Arkitektur, Fex övr utbildning (ADD)</option>
+          <option value="ABE/Arkitektur, Gru 1-2-3 (ADB)">ABE/Arkitektur, Gru 1-2-3 (ADB)</option>
+          <option value="ABE/Arkitektur, Gru 4-5 (ADC)">ABE/Arkitektur, Gru 4-5 (ADC)</option>
+          <option value="ABE/Bank och finans (AIE)">ABE/Bank och finans (AIE)</option>
+          <option value="ABE/Betongbyggnad (AFF)">ABE/Betongbyggnad (AFF)</option>
+          <option value="ABE/Brobyggnad inkl stålbyggnad (AFE)">ABE/Brobyggnad inkl stålbyggnad (AFE)</option>
+          <option value="ABE/Bygg- och fastighetsekonomi (AIB)">ABE/Bygg- och fastighetsekonomi (AIB)</option>
+          <option value="ABE/Byggnadsmaterial (AFB)">ABE/Byggnadsmaterial (AFB)</option>
+          <option value="ABE/Byggnadsteknik (AFC)">ABE/Byggnadsteknik (AFC)</option>
+          <option value="ABE/Byggteknik och design (AFK)">ABE/Byggteknik och design (AFK)</option>
+          <option value="ABE/Byggvetenskap gemensamt (AFA)">ABE/Byggvetenskap gemensamt (AFA)</option>
+          <option value="ABE/Fastighetsekonomi och finans (AIB)">ABE/Fastighetsekonomi och finans (AIB)</option>
+          <option value="ABE/Fastighetsföretagande och finansie§§§ (AIE)">ABE/Fastighetsföretagande och finansie... (AIE)</option>
+          <option value="ABE/Fastighetsvetenskap (AIC)">ABE/Fastighetsvetenskap (AIC)</option>
+          <option value="ABE/Filosofi (AKB)">ABE/Filosofi (AKB)</option>
+          <option value="ABE/Filosofi och historia gemensamt (AKA)">ABE/Filosofi och historia gemensamt (AKA)</option>
+          <option value="ABE/Geodesi och satellitpositionering (AIG)">ABE/Geodesi och satellitpositionering (AIG)</option>
+          <option value="ABE/Geoinformatik (AGF)">ABE/Geoinformatik (AGF)</option>
+          <option value="ABE/Historiska studier av teknik, veten§§§ (AKC)">ABE/Historiska studier av teknik, veten... (AKC)</option>
+          <option value="ABE/Hållbar utveckling, miljövetenskap§§§ (AL)">ABE/Hållbar utveckling, miljövetenskap... (AL)</option>
+          <option value="ABE/Hållbara byggnader (AFT)">ABE/Hållbara byggnader (AFT)</option>
+          <option value="ABE/Hållbarhet och miljteknik (ALF)">ABE/Hållbarhet och miljteknik (ALF)</option>
+          <option value="ABE/Hållbarhet och miljöteknik (ALF)">ABE/Hållbarhet och miljöteknik (ALF)</option>
+          <option value="ABE/Industriell ekologi (ALB)">ABE/Industriell ekologi (ALB)</option>
+          <option value="ABE/Installations- och energisystem (AFD)">ABE/Installations- och energisystem (AFD)</option>
+          <option value="ABE/Jord- och bergmekanik (AFH)">ABE/Jord- och bergmekanik (AFH)</option>
+          <option value="ABE/Ledning och organisering i byggande§§§ (AID)">ABE/Ledning och organisering i byggande... (AID)</option>
+          <option value="ABE/Ljusdesign (ADF)">ABE/Ljusdesign (ADF)</option>
+          <option value="ABE/Mark och vattenteknik (ALC)">ABE/Mark och vattenteknik (ALC)</option>
+          <option value="ABE/Miljöstrategisk analys (ALD)">ABE/Miljöstrategisk analys (ALD)</option>
+          <option value="ABE/Projektkommunikation (AID)">ABE/Projektkommunikation (AID)</option>
+          <option value="ABE/Samhällsplanering och miljö (AG)">ABE/Samhällsplanering och miljö (AG)</option>
+          <option value="ABE/Strömnings- och klimatteknik (AFL)">ABE/Strömnings- och klimatteknik (AFL)</option>
+          <option value="ABE/Systemanalys och ekonomi (AGI)">ABE/Systemanalys och ekonomi (AGI)</option>
+          <option value="ABE/Systemanalys och ekonomi (AHD)">ABE/Systemanalys och ekonomi (AHD)</option>
+          <option value="ABE/Transportplanering (AFP)">ABE/Transportplanering (AFP)</option>
+          <option value="ABE/Transportplanering, ekonomi och teknik (AFP)">ABE/Transportplanering, ekonomi och teknik (AFP)</option>
+          <option value="ABE/Transportplanering, ekonomi och teknik (AHB)">ABE/Transportplanering, ekonomi och teknik (AHB)</option>
+          <option value="ABE/Uppdragsutb, Design och byggande i §§§ (AMB)">ABE/Uppdragsutb, Design och byggande i ... (AMB)</option>
+          <option value="ABE/Urbana och regionala studier (AGB)">ABE/Urbana och regionala studier (AGB)</option>
+          <option value="ABE/Utbildningskansli AAB (AAB)">ABE/Utbildningskansli AAB (AAB)</option>
+          <option value="ABE/Utbildningskansli, S (AAB)">ABE/Utbildningskansli, S (AAB)</option>
+          <option value="ABE/Vattendragsteknik (AFM)">ABE/Vattendragsteknik (AFM)</option>
+          <option value="BIO/Bioteknologi - gru (BB)">BIO/Bioteknologi - gru (BB)</option>
+          <option value="BIO/Bioteknologi (BA)">BIO/Bioteknologi (BA)</option>
+          <option value="CBH/Fiber- och Polymerteknologi (CG)">CBH/Fiber- och Polymerteknologi (CG)</option>
+          <option value="CBH/Genteknologi (CH)">CBH/Genteknologi (CH)</option>
+          <option value="CBH/Industriell bioteknologi (CK)">CBH/Industriell bioteknologi (CK)</option>
+          <option value="CBH/Ingenjörspedagogik (CM)">CBH/Ingenjörspedagogik (CM)</option>
+          <option value="CBH/Kemi (CE)">CBH/Kemi (CE)</option>
+          <option value="CBH/Kemiteknik (CF)">CBH/Kemiteknik (CF)</option>
+          <option value="CBH/Medicinsteknik och hälsosystem (CD)">CBH/Medicinsteknik och hälsosystem (CD)</option>
+          <option value="CBH/Medicinteknik och hälsosystem (CD)">CBH/Medicinteknik och hälsosystem (CD)</option>
+          <option value="CBH/Proteinvetenskap (CJ)">CBH/Proteinvetenskap (CJ)</option>
+          <option value="CBH/Skolövergripande (CB)">CBH/Skolövergripande (CB)</option>
+          <option value="CBH/Teoretisk kemi och biologi (CL)">CBH/Teoretisk kemi och biologi (CL)</option>
+          <option value="CBH/Utbildningsenheten (CACB)">CBH/Utbildningsenheten (CACB)</option>
+          <option value="CHE/Fiber- och polymerteknologi (KF)">CHE/Fiber- och polymerteknologi (KF)</option>
+          <option value="CHE/Högskoleingenjörsprogram (KHB)">CHE/Högskoleingenjörsprogram (KHB)</option>
+          <option value="CHE/Ingenjörspedagogiska avdelningen (KH)">CHE/Ingenjörspedagogiska avdelningen (KH)</option>
+          <option value="CHE/Kemi (KD)">CHE/Kemi (KD)</option>
+          <option value="CHE/Kemisk teknologi (KET)">CHE/Kemisk teknologi (KET)</option>
+          <option value="CHE/Kemiteknik (KE)">CHE/Kemiteknik (KE)</option>
+          <option value="CHE/Kemivetenskap (KA)">CHE/Kemivetenskap (KA)</option>
+          <option value="CHE/Tekniskt basår (KHD)">CHE/Tekniskt basår (KHD)</option>
+          <option value="CSC/Beräkningsvetenskap och beräknings§§§ (DK)">CSC/Beräkningsvetenskap och beräknings... (DK)</option>
+          <option value="CSC/Datalogi (DD)">CSC/Datalogi (DD)</option>
+          <option value="CSC/Datavetenskap och kommunikation (DA)">CSC/Datavetenskap och kommunikation (DA)</option>
+          <option value="CSC/Datavetenskap och kommunikation (DAG)">CSC/Datavetenskap och kommunikation (DAG)</option>
+          <option value="CSC/Gru (DAG)">CSC/Gru (DAG)</option>
+          <option value="CSC/Medieteknik och interaktionsdesign (DM)">CSC/Medieteknik och interaktionsdesign (DM)</option>
+          <option value="CSC/Medieteknik och interaktionsdesign (DME)">CSC/Medieteknik och interaktionsdesign (DME)</option>
+          <option value="CSC/Människa-datorinteraktion (DH)">CSC/Människa-datorinteraktion (DH)</option>
+          <option value="CSC/Numerisk analys (DN)">CSC/Numerisk analys (DN)</option>
+          <option value="CSC/Robotik, perception och lärande (DO)">CSC/Robotik, perception och lärande (DO)</option>
+          <option value="CSC/Språk och kommunikation (DS)">CSC/Språk och kommunikation (DS)</option>
+          <option value="CSC/Tal, musik och hörsel (DT)">CSC/Tal, musik och hörsel (DT)</option>
+          <option value="CSC/Teoretisk datalogi (DL)">CSC/Teoretisk datalogi (DL)</option>
+          <option value="ECE/Enheten för språk och kommunikation (LS)">ECE/Enheten för språk och kommunikation (LS)</option>
+          <option value="ECE/Högskolepedagogik (LPB)">ECE/Högskolepedagogik (LPB)</option>
+          <option value="ECE/Learning Lab och -kurser (LJ)">ECE/Learning Lab och -kurser (LJ)</option>
+          <option value="ECE/Lärande (LP)">ECE/Lärande (LP)</option>
+          <option value="ECE/Lärarutbildning (LPA)">ECE/Lärarutbildning (LPA)</option>
+          <option value="ECE/Skolan för teknikvetenskaplig kommun§§§ (L)">ECE/Skolan för teknikvetenskaplig kommun... (L)</option>
+          <option value="ECE/Utbildningskansli (LAC)">ECE/Utbildningskansli (LAC)</option>
+          <option value="ECE/Ämnessökning och -kurser (LGC)">ECE/Ämnessökning och -kurser (LGC)</option>
+          <option value="EECS/Beräkningsvetenskap  och beräkni§§§ (JHS)">EECS/Beräkningsvetenskap  och beräkni... (JHS)</option>
+          <option value="EECS/Datavetenskap (JH)">EECS/Datavetenskap (JH)</option>
+          <option value="EECS/Elektronik (JGA)">EECS/Elektronik (JGA)</option>
+          <option value="EECS/Elektronik och inbyggda system (JG)">EECS/Elektronik och inbyggda system (JG)</option>
+          <option value="EECS/Elektronik och inbyggda system (JJG)">EECS/Elektronik och inbyggda system (JJG)</option>
+          <option value="EECS/Elektroteknik (JJ)">EECS/Elektroteknik (JJ)</option>
+          <option value="EECS/Elektroteknisk teori och konstruktion (JJI)">EECS/Elektroteknisk teori och konstruktion (JJI)</option>
+          <option value="EECS/Elkraftteknik (JJN)">EECS/Elkraftteknik (JJN)</option>
+          <option value="EECS/Energi och elektroteknik (JJ)">EECS/Energi och elektroteknik (JJ)</option>
+          <option value="EECS/Fusionsplasmafysik (JJD)">EECS/Fusionsplasmafysik (JJD)</option>
+          <option value="EECS/Intelligenta system (JR)">EECS/Intelligenta system (JR)</option>
+          <option value="EECS/Kommunikation (JF)">EECS/Kommunikation (JF)</option>
+          <option value="EECS/Kommunikationssystem (JFA)">EECS/Kommunikationssystem (JFA)</option>
+          <option value="EECS/Kommunikationssystem (JHF)">EECS/Kommunikationssystem (JHF)</option>
+          <option value="EECS/Medieteknik och Interaktonsdesign (JMA)">EECS/Medieteknik och Interaktonsdesign (JMA)</option>
+          <option value="EECS/Mikro-och nanosystem (JRQ)">EECS/Mikro-och nanosystem (JRQ)</option>
+          <option value="EECS/Människocentrerad teknologi (JM)">EECS/Människocentrerad teknologi (JM)</option>
+          <option value="EECS/Nätverk och systemteknik (JHP)">EECS/Nätverk och systemteknik (JHP)</option>
+          <option value="EECS/Programvaruteknik och datorsystem (JHK)">EECS/Programvaruteknik och datorsystem (JHK)</option>
+          <option value="EECS/Reglerteknik (JRL)">EECS/Reglerteknik (JRL)</option>
+          <option value="EECS/Robotik, perception och lärande (JRR)">EECS/Robotik, perception och lärande (JRR)</option>
+          <option value="EECS/Rymd-och Plasmafysik (JJE)">EECS/Rymd-och Plasmafysik (JJE)</option>
+          <option value="EECS/Skolan för elektroteknik och datave§§§ (J)">EECS/Skolan för elektroteknik och datave... (J)</option>
+          <option value="EECS/Tal, musik och hörsel (JRT)">EECS/Tal, musik och hörsel (JRT)</option>
+          <option value="EECS/Teknisk informationsvetenskap (JRO)">EECS/Teknisk informationsvetenskap (JRO)</option>
+          <option value="EECS/Teoretisk datalogi (JHT)">EECS/Teoretisk datalogi (JHT)</option>
+          <option value="EECS/Utbildningskansliet (JBU)">EECS/Utbildningskansliet (JBU)</option>
+          <option value="EES/Elektrisk energiomvandling (EJ)">EES/Elektrisk energiomvandling (EJ)</option>
+          <option value="EES/Elektriska energisystem (EG)">EES/Elektriska energisystem (EG)</option>
+          <option value="EES/Elektroteknisk teori och konstruktion (EI)">EES/Elektroteknisk teori och konstruktion (EI)</option>
+          <option value="EES/Elkraftteknik (EN)">EES/Elkraftteknik (EN)</option>
+          <option value="EES/Fusionsplasmafysik (ED)">EES/Fusionsplasmafysik (ED)</option>
+          <option value="EES/Industriella informations och styrsy§§§ (EH)">EES/Industriella informations och styrsy... (EH)</option>
+          <option value="EES/Kommunikationsnät (EP)">EES/Kommunikationsnät (EP)</option>
+          <option value="EES/Kommunikationsteori (EO)">EES/Kommunikationsteori (EO)</option>
+          <option value="EES/Mikro- och nanosystem (EK)">EES/Mikro- och nanosystem (EK)</option>
+          <option value="EES/Nätverk och systemteknik (EP)">EES/Nätverk och systemteknik (EP)</option>
+          <option value="EES/Reglerteknik (EL)">EES/Reglerteknik (EL)</option>
+          <option value="EES/Rymd- och plasmafysik (EF)">EES/Rymd- och plasmafysik (EF)</option>
+          <option value="EES/Signalbehandling (EM)">EES/Signalbehandling (EM)</option>
+          <option value="EES/Teknisk informationsvetenskap (EO)">EES/Teknisk informationsvetenskap (EO)</option>
+          <option value="GVS/VÄGLEDNING OCH STÖD (TGAC)">GVS/VÄGLEDNING OCH STÖD (TGAC)</option>
+          <option value="Högskolepedagogik (LPB)">Högskolepedagogik (LPB)</option>
+          <option value="ICT/Elektronik (IG)">ICT/Elektronik (IG)</option>
+          <option value="ICT/Elektroniksystem (IE)">ICT/Elektroniksystem (IE)</option>
+          <option value="ICT/ICT UTBILDNINGSFUNKTIONEN (IAD)">ICT/ICT UTBILDNINGSFUNKTIONEN (IAD)</option>
+          <option value="ICT/Informations- och kommunikationsteknik (IA)">ICT/Informations- och kommunikationsteknik (IA)</option>
+          <option value="ICT/Integrerade komponenter och kretsar (IG)">ICT/Integrerade komponenter och kretsar (IG)</option>
+          <option value="ICT/Kommunikation: tjänster och infrast§§§ (IF)">ICT/Kommunikation: tjänster och infrast... (IF)</option>
+          <option value="ICT/Kommunikationssystem (IF)">ICT/Kommunikationssystem (IF)</option>
+          <option value="ICT/Materialfysik (ID)">ICT/Materialfysik (ID)</option>
+          <option value="ICT/Programvaruteknik och Datorsystem (IK)">ICT/Programvaruteknik och Datorsystem (IK)</option>
+          <option value="ITM/Ekv kraft- & värmeteknologi (MJEC)">ITM/Ekv kraft- &amp; värmeteknologi (MJEC)</option>
+          <option value="ITM/Energiteknik - Gru (MJEA)">ITM/Energiteknik - Gru (MJEA)</option>
+          <option value="ITM/Energiteknik (MD)">ITM/Energiteknik (MD)</option>
+          <option value="ITM/Energiteknik (MJ)">ITM/Energiteknik (MJ)</option>
+          <option value="ITM/Genus, organisation och ledning (MAC)">ITM/Genus, organisation och ledning (MAC)</option>
+          <option value="ITM/Hållbar produktionsutveckling (ML)">ITM/Hållbar produktionsutveckling (ML)</option>
+          <option value="ITM/Industriell ekonomi och organisation (ME)">ITM/Industriell ekonomi och organisation (ME)</option>
+          <option value="ITM/Industriell produktion (MG)">ITM/Industriell produktion (MG)</option>
+          <option value="ITM/Industriell teknik och management (MA)">ITM/Industriell teknik och management (MA)</option>
+          <option value="ITM/Lärande (MO)">ITM/Lärande (MO)</option>
+          <option value="ITM/Maskinkonstruktion (MF)">ITM/Maskinkonstruktion (MF)</option>
+          <option value="ITM/Materialvetenskap (MH)">ITM/Materialvetenskap (MH)</option>
+          <option value="ITM/Materialvetenskap (MV)">ITM/Materialvetenskap (MV)</option>
+          <option value="ITM/Tillämpad maskinteknik (ML)">ITM/Tillämpad maskinteknik (ML)</option>
+          <option value="ITM/Utbildningskansli (MAB)">ITM/Utbildningskansli (MAB)</option>
+          <option value="KTH Tal, musik och hörsel (260)">KTH Tal, musik och hörsel (260)</option>
+          <option value="KTH/Universitetsförvaltningen/AUA/VoS (VDVC)">KTH/Universitetsförvaltningen/AUA/VoS (VDVC)</option>
+          <option value="KTH/Utbildningsstöd (EDO) (TG)">KTH/Utbildningsstöd (EDO) (TG)</option>
+          <option value="Lärarutbildning (LPA)">Lärarutbildning (LPA)</option>
+          <option value="RKH">RKH</option>
+          <option value="SCI UTBILDNINGSKANSLI (SAB)">SCI UTBILDNINGSKANSLI (SAB)</option>
+          <option value="SCI/Farkost och flyg (SD)">SCI/Farkost och flyg (SD)</option>
+          <option value="SCI/Fysik (SH)">SCI/Fysik (SH)</option>
+          <option value="SCI/Fysik grundutbildning (SHB)">SCI/Fysik grundutbildning (SHB)</option>
+          <option value="SCI/Hållfasthetslära (SE)">SCI/Hållfasthetslära (SE)</option>
+          <option value="SCI/Matematik (SF)">SCI/Matematik (SF)</option>
+          <option value="SCI/Mekanik (SG)">SCI/Mekanik (SG)</option>
+          <option value="SCI/Teknikvetenskap (SA)">SCI/Teknikvetenskap (SA)</option>
+          <option value="SCI/Teoretisk fysik (SI)">SCI/Teoretisk fysik (SI)</option>
+          <option value="SCI/Teoretisk fysik grundutbildning (SIB)">SCI/Teoretisk fysik grundutbildning (SIB)</option>
+          <option value="SCI/Tillämpad fysik (SK)">SCI/Tillämpad fysik (SK)</option>
+          <option value="SCI/Tillämpad fysik grundutbildning (SKB)">SCI/Tillämpad fysik grundutbildning (SKB)</option>
+          <option value="STH/Bildbehandling och visualisering (HSM)">STH/Bildbehandling och visualisering (HSM)</option>
+          <option value="STH/DASH (HPG)">STH/DASH (HPG)</option>
+          <option value="STH/Data- och Elektroteknik (HSE)">STH/Data- och Elektroteknik (HSE)</option>
+          <option value="STH/Ergonomi (HPN)">STH/Ergonomi (HPN)</option>
+          <option value="STH/Grundläggande naturvetenskap (HLF)">STH/Grundläggande naturvetenskap (HLF)</option>
+          <option value="STH/Klinisk innovation (HPE)">STH/Klinisk innovation (HPE)</option>
+          <option value="STH/Medicinsk bildteknik (HSL)">STH/Medicinsk bildteknik (HSL)</option>
+          <option value="STH/Medicinsk Teknik (HLL)">STH/Medicinsk Teknik (HLL)</option>
+          <option value="STH/Neuronik (HLK)">STH/Neuronik (HLK)</option>
+          <option value="STH/Neuronik (HSN)">STH/Neuronik (HSN)</option>
+          <option value="STH/Omgivningsfysiologi (HLA)">STH/Omgivningsfysiologi (HLA)</option>
+          <option value="STH/Strukturell bioteknik (HLM)">STH/Strukturell bioteknik (HLM)</option>
+          <option value="STH/Systemsäkerhet och organisation (HPC)">STH/Systemsäkerhet och organisation (HPC)</option>
+          <option value="STH/Teknik och hälsa (HA)">STH/Teknik och hälsa (HA)</option>
+          <option value="STH/Teknisk vårdvetenskap (HPCA)">STH/Teknisk vårdvetenskap (HPCA)</option>
+          <option value="STH/Vårdlogistik (HPM)">STH/Vårdlogistik (HPM)</option>
+          <option value="Stockholms universitet (UL)">Stockholms universitet (UL)</option>
+      </select>
+       </div>
+            <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="15" data-param="fe" data-tefieldkind="CATEGORY" data-name="Campus" name="10_84" data-prefix="84" id="ff10_84">
+          <option value="AlbaNova">AlbaNova</option>
+          <option value="Campus Kista">Campus Kista</option>
+          <option value="Handelshögskolan">Handelshögskolan</option>
+          <option value="KI Flemingsberg">KI Flemingsberg</option>
+          <option value="KI Solna">KI Solna</option>
+          <option value="Konstfack">Konstfack</option>
+          <option value="KTH Campus">KTH Campus</option>
+          <option value="KTH Flemingsberg">KTH Flemingsberg</option>
+          <option value="KTH Haninge">KTH Haninge</option>
+          <option value="KTH Kista">KTH Kista</option>
+          <option value="KTH Solna">KTH Solna</option>
+          <option value="KTH Södertälje">KTH Södertälje</option>
+          <option value="Lärarhögskolan">Lärarhögskolan</option>
+          <option value="Stockholms Universitet">Stockholms Universitet</option>
+      </select>
+       </div>
+    <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="10" data-basename="Kurstillfälle" data-name="Kurstillfälle" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Kurstillfälle">Lägg till alla: Kurstillfälle</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset6" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+       <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="6" data-basename="Grupp" data-name="Grupp" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Grupp">Lägg till alla: Grupp</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset4" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+               <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="15" data-param="fe" data-tefieldkind="CATEGORY" data-name="Campus" name="4_84" data-prefix="84" id="ff4_84">
+          <option value="AlbaNova">AlbaNova</option>
+          <option value="Campus Kista">Campus Kista</option>
+          <option value="Handelshögskolan">Handelshögskolan</option>
+          <option value="KI Flemingsberg">KI Flemingsberg</option>
+          <option value="KI Solna">KI Solna</option>
+          <option value="Konstfack">Konstfack</option>
+          <option value="KTH Campus">KTH Campus</option>
+          <option value="KTH Flemingsberg">KTH Flemingsberg</option>
+          <option value="KTH Haninge">KTH Haninge</option>
+          <option value="KTH Kista">KTH Kista</option>
+          <option value="KTH Solna">KTH Solna</option>
+          <option value="KTH Södertälje">KTH Södertälje</option>
+          <option value="Lärarhögskolan">Lärarhögskolan</option>
+          <option value="Stockholms Universitet">Stockholms Universitet</option>
+      </select>
+       </div>
+         <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="33" data-param="fe" data-tefieldkind="CATEGORY" data-name="Husnamn" name="4_29" data-prefix="29" id="ff4_29">
+          <option value="Arkitektur">Arkitektur</option>
+          <option value="Bergs">Bergs</option>
+          <option value="Byggnad 1">Byggnad 1</option>
+          <option value="Byggteknik & Design">Byggteknik &amp; Design</option>
+          <option value="D-huset, huvudbyggnaden">D-huset, huvudbyggnaden</option>
+          <option value="E-huset, huvudbyggnaden">E-huset, huvudbyggnaden</option>
+          <option value="Electrum 1">Electrum 1</option>
+          <option value="F-huset">F-huset</option>
+          <option value="Flyget">Flyget</option>
+          <option value="Gamma">Gamma</option>
+          <option value="H-huset">H-huset</option>
+          <option value="Hus 1">Hus 1</option>
+          <option value="Hus 2">Hus 2</option>
+          <option value="Hus A">Hus A</option>
+          <option value="Hus B">Hus B</option>
+          <option value="Hus C">Hus C</option>
+          <option value="Huvudbyggnaden">Huvudbyggnaden</option>
+          <option value="Kemi">Kemi</option>
+          <option value="KTH-huset">KTH-huset</option>
+          <option value="KTH-huset östra">KTH-huset östra</option>
+          <option value="KTHB">KTHB</option>
+          <option value="Lantmäteri">Lantmäteri</option>
+          <option value="Maskin">Maskin</option>
+          <option value="Pyramiden 20">Pyramiden 20</option>
+          <option value="Q-huset">Q-huset</option>
+          <option value="R1:an">R1:an</option>
+          <option value="Ringen-huset">Ringen-huset</option>
+          <option value="Sing-Sing">Sing-Sing</option>
+          <option value="Technology and Health">Technology and Health</option>
+          <option value="Undervisningshuset">Undervisningshuset</option>
+          <option value="Väg och vatten">Väg och vatten</option>
+          <option value="YKI-huset">YKI-huset</option>
+      </select>
+       </div>
+         <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="24" data-param="fe" data-tefieldkind="CATEGORY" data-name="Lokaltyp" name="4_27" data-prefix="27" id="ff4_27">
+          <option value="Ateljé">Ateljé</option>
+          <option value="Break-Out område">Break-Out område</option>
+          <option value="Datorsal">Datorsal</option>
+          <option value="Grupprum">Grupprum</option>
+          <option value="Hörsal">Hörsal</option>
+          <option value="Konferensrum">Konferensrum</option>
+          <option value="Kontemplationsrum">Kontemplationsrum</option>
+          <option value="Kontor">Kontor</option>
+          <option value="Kök/Pentry">Kök/Pentry</option>
+          <option value="Lab">Lab</option>
+          <option value="Ljusgård">Ljusgård</option>
+          <option value="Läsplats">Läsplats</option>
+          <option value="Möte">Möte</option>
+          <option value="Mötesrum">Mötesrum</option>
+          <option value="ospec">ospec</option>
+          <option value="Pausrum">Pausrum</option>
+          <option value="Projektrum">Projektrum</option>
+          <option value="Resursrum">Resursrum</option>
+          <option value="Ritsal">Ritsal</option>
+          <option value="Seminarierum">Seminarierum</option>
+          <option value="Utställningssal">Utställningssal</option>
+          <option value="Verkstad">Verkstad</option>
+          <option value="Övningssal">Övningssal</option>
+      </select>
+       </div>
+       <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="4" data-basename="Lokal" data-name="Lokal" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Lokal">Lägg till alla: Lokal</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset3" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+          <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="3" data-basename="Personal" data-name="Personal" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Personal">Lägg till alla: Personal</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset9" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+             <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="9" data-basename="Aktivitet" data-name="Aktivitet" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Aktivitet">Lägg till alla: Aktivitet</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset27" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+                  <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="15" data-param="fe" data-tefieldkind="CATEGORY" data-name="Campus" name="27_84" data-prefix="84" id="ff27_84">
+          <option value="AlbaNova">AlbaNova</option>
+          <option value="Campus Kista">Campus Kista</option>
+          <option value="Handelshögskolan">Handelshögskolan</option>
+          <option value="KI Flemingsberg">KI Flemingsberg</option>
+          <option value="KI Solna">KI Solna</option>
+          <option value="Konstfack">Konstfack</option>
+          <option value="KTH Campus">KTH Campus</option>
+          <option value="KTH Flemingsberg">KTH Flemingsberg</option>
+          <option value="KTH Haninge">KTH Haninge</option>
+          <option value="KTH Kista">KTH Kista</option>
+          <option value="KTH Solna">KTH Solna</option>
+          <option value="KTH Södertälje">KTH Södertälje</option>
+          <option value="Lärarhögskolan">Lärarhögskolan</option>
+          <option value="Stockholms Universitet">Stockholms Universitet</option>
+      </select>
+       </div>
+    <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="27" data-basename="Kansliaktivitet" data-name="Kansliaktivitet" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Kansliaktivitet">Lägg till alla: Kansliaktivitet</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset5" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+                  <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="189" data-param="fe" data-tefieldkind="CATEGORY" data-name="Avdelningskod" name="5_56" data-prefix="56" id="ff5_56">
+          <option value="ABE/Arkitektur (AD)">ABE/Arkitektur (AD)</option>
+          <option value="ABE/Arkitektur, Fex övr utbildning (ADD)">ABE/Arkitektur, Fex övr utbildning (ADD)</option>
+          <option value="ABE/Arkitektur, Gru 1-2-3 (ADB)">ABE/Arkitektur, Gru 1-2-3 (ADB)</option>
+          <option value="ABE/Arkitektur, Gru 4-5 (ADC)">ABE/Arkitektur, Gru 4-5 (ADC)</option>
+          <option value="ABE/Bank och finans (AIE)">ABE/Bank och finans (AIE)</option>
+          <option value="ABE/Betongbyggnad (AFF)">ABE/Betongbyggnad (AFF)</option>
+          <option value="ABE/Brobyggnad inkl stålbyggnad (AFE)">ABE/Brobyggnad inkl stålbyggnad (AFE)</option>
+          <option value="ABE/Bygg- och fastighetsekonomi (AIB)">ABE/Bygg- och fastighetsekonomi (AIB)</option>
+          <option value="ABE/Byggnadsmaterial (AFB)">ABE/Byggnadsmaterial (AFB)</option>
+          <option value="ABE/Byggnadsteknik (AFC)">ABE/Byggnadsteknik (AFC)</option>
+          <option value="ABE/Byggteknik och design (AFK)">ABE/Byggteknik och design (AFK)</option>
+          <option value="ABE/Byggvetenskap gemensamt (AFA)">ABE/Byggvetenskap gemensamt (AFA)</option>
+          <option value="ABE/Fastighetsekonomi och finans (AIB)">ABE/Fastighetsekonomi och finans (AIB)</option>
+          <option value="ABE/Fastighetsföretagande och finansie§§§ (AIE)">ABE/Fastighetsföretagande och finansie... (AIE)</option>
+          <option value="ABE/Fastighetsvetenskap (AIC)">ABE/Fastighetsvetenskap (AIC)</option>
+          <option value="ABE/Filosofi (AKB)">ABE/Filosofi (AKB)</option>
+          <option value="ABE/Filosofi och historia gemensamt (AKA)">ABE/Filosofi och historia gemensamt (AKA)</option>
+          <option value="ABE/Geodesi och satellitpositionering (AIG)">ABE/Geodesi och satellitpositionering (AIG)</option>
+          <option value="ABE/Geoinformatik (AGF)">ABE/Geoinformatik (AGF)</option>
+          <option value="ABE/Historiska studier av teknik, veten§§§ (AKC)">ABE/Historiska studier av teknik, veten... (AKC)</option>
+          <option value="ABE/Hållbar utveckling, miljövetenskap§§§ (AL)">ABE/Hållbar utveckling, miljövetenskap... (AL)</option>
+          <option value="ABE/Hållbara byggnader (AFT)">ABE/Hållbara byggnader (AFT)</option>
+          <option value="ABE/Hållbarhet och miljteknik (ALF)">ABE/Hållbarhet och miljteknik (ALF)</option>
+          <option value="ABE/Hållbarhet och miljöteknik (ALF)">ABE/Hållbarhet och miljöteknik (ALF)</option>
+          <option value="ABE/Industriell ekologi (ALB)">ABE/Industriell ekologi (ALB)</option>
+          <option value="ABE/Installations- och energisystem (AFD)">ABE/Installations- och energisystem (AFD)</option>
+          <option value="ABE/Jord- och bergmekanik (AFH)">ABE/Jord- och bergmekanik (AFH)</option>
+          <option value="ABE/Ledning och organisering i byggande§§§ (AID)">ABE/Ledning och organisering i byggande... (AID)</option>
+          <option value="ABE/Ljusdesign (ADF)">ABE/Ljusdesign (ADF)</option>
+          <option value="ABE/Mark och vattenteknik (ALC)">ABE/Mark och vattenteknik (ALC)</option>
+          <option value="ABE/Miljöstrategisk analys (ALD)">ABE/Miljöstrategisk analys (ALD)</option>
+          <option value="ABE/Projektkommunikation (AID)">ABE/Projektkommunikation (AID)</option>
+          <option value="ABE/Samhällsplanering och miljö (AG)">ABE/Samhällsplanering och miljö (AG)</option>
+          <option value="ABE/Strömnings- och klimatteknik (AFL)">ABE/Strömnings- och klimatteknik (AFL)</option>
+          <option value="ABE/Systemanalys och ekonomi (AGI)">ABE/Systemanalys och ekonomi (AGI)</option>
+          <option value="ABE/Systemanalys och ekonomi (AHD)">ABE/Systemanalys och ekonomi (AHD)</option>
+          <option value="ABE/Transportplanering (AFP)">ABE/Transportplanering (AFP)</option>
+          <option value="ABE/Transportplanering, ekonomi och teknik (AFP)">ABE/Transportplanering, ekonomi och teknik (AFP)</option>
+          <option value="ABE/Transportplanering, ekonomi och teknik (AHB)">ABE/Transportplanering, ekonomi och teknik (AHB)</option>
+          <option value="ABE/Uppdragsutb, Design och byggande i §§§ (AMB)">ABE/Uppdragsutb, Design och byggande i ... (AMB)</option>
+          <option value="ABE/Urbana och regionala studier (AGB)">ABE/Urbana och regionala studier (AGB)</option>
+          <option value="ABE/Utbildningskansli AAB (AAB)">ABE/Utbildningskansli AAB (AAB)</option>
+          <option value="ABE/Utbildningskansli, S (AAB)">ABE/Utbildningskansli, S (AAB)</option>
+          <option value="ABE/Vattendragsteknik (AFM)">ABE/Vattendragsteknik (AFM)</option>
+          <option value="BIO/Bioteknologi - gru (BB)">BIO/Bioteknologi - gru (BB)</option>
+          <option value="BIO/Bioteknologi (BA)">BIO/Bioteknologi (BA)</option>
+          <option value="CBH/Fiber- och Polymerteknologi (CG)">CBH/Fiber- och Polymerteknologi (CG)</option>
+          <option value="CBH/Genteknologi (CH)">CBH/Genteknologi (CH)</option>
+          <option value="CBH/Industriell bioteknologi (CK)">CBH/Industriell bioteknologi (CK)</option>
+          <option value="CBH/Ingenjörspedagogik (CM)">CBH/Ingenjörspedagogik (CM)</option>
+          <option value="CBH/Kemi (CE)">CBH/Kemi (CE)</option>
+          <option value="CBH/Kemiteknik (CF)">CBH/Kemiteknik (CF)</option>
+          <option value="CBH/Medicinsteknik och hälsosystem (CD)">CBH/Medicinsteknik och hälsosystem (CD)</option>
+          <option value="CBH/Medicinteknik och hälsosystem (CD)">CBH/Medicinteknik och hälsosystem (CD)</option>
+          <option value="CBH/Proteinvetenskap (CJ)">CBH/Proteinvetenskap (CJ)</option>
+          <option value="CBH/Skolövergripande (CB)">CBH/Skolövergripande (CB)</option>
+          <option value="CBH/Teoretisk kemi och biologi (CL)">CBH/Teoretisk kemi och biologi (CL)</option>
+          <option value="CBH/Utbildningsenheten (CACB)">CBH/Utbildningsenheten (CACB)</option>
+          <option value="CHE/Fiber- och polymerteknologi (KF)">CHE/Fiber- och polymerteknologi (KF)</option>
+          <option value="CHE/Högskoleingenjörsprogram (KHB)">CHE/Högskoleingenjörsprogram (KHB)</option>
+          <option value="CHE/Ingenjörspedagogiska avdelningen (KH)">CHE/Ingenjörspedagogiska avdelningen (KH)</option>
+          <option value="CHE/Kemi (KD)">CHE/Kemi (KD)</option>
+          <option value="CHE/Kemisk teknologi (KET)">CHE/Kemisk teknologi (KET)</option>
+          <option value="CHE/Kemiteknik (KE)">CHE/Kemiteknik (KE)</option>
+          <option value="CHE/Kemivetenskap (KA)">CHE/Kemivetenskap (KA)</option>
+          <option value="CHE/Tekniskt basår (KHD)">CHE/Tekniskt basår (KHD)</option>
+          <option value="CSC/Beräkningsvetenskap och beräknings§§§ (DK)">CSC/Beräkningsvetenskap och beräknings... (DK)</option>
+          <option value="CSC/Datalogi (DD)">CSC/Datalogi (DD)</option>
+          <option value="CSC/Datavetenskap och kommunikation (DA)">CSC/Datavetenskap och kommunikation (DA)</option>
+          <option value="CSC/Datavetenskap och kommunikation (DAG)">CSC/Datavetenskap och kommunikation (DAG)</option>
+          <option value="CSC/Gru (DAG)">CSC/Gru (DAG)</option>
+          <option value="CSC/Medieteknik och interaktionsdesign (DM)">CSC/Medieteknik och interaktionsdesign (DM)</option>
+          <option value="CSC/Medieteknik och interaktionsdesign (DME)">CSC/Medieteknik och interaktionsdesign (DME)</option>
+          <option value="CSC/Människa-datorinteraktion (DH)">CSC/Människa-datorinteraktion (DH)</option>
+          <option value="CSC/Numerisk analys (DN)">CSC/Numerisk analys (DN)</option>
+          <option value="CSC/Robotik, perception och lärande (DO)">CSC/Robotik, perception och lärande (DO)</option>
+          <option value="CSC/Språk och kommunikation (DS)">CSC/Språk och kommunikation (DS)</option>
+          <option value="CSC/Tal, musik och hörsel (DT)">CSC/Tal, musik och hörsel (DT)</option>
+          <option value="CSC/Teoretisk datalogi (DL)">CSC/Teoretisk datalogi (DL)</option>
+          <option value="ECE/Enheten för språk och kommunikation (LS)">ECE/Enheten för språk och kommunikation (LS)</option>
+          <option value="ECE/Högskolepedagogik (LPB)">ECE/Högskolepedagogik (LPB)</option>
+          <option value="ECE/Learning Lab och -kurser (LJ)">ECE/Learning Lab och -kurser (LJ)</option>
+          <option value="ECE/Lärande (LP)">ECE/Lärande (LP)</option>
+          <option value="ECE/Lärarutbildning (LPA)">ECE/Lärarutbildning (LPA)</option>
+          <option value="ECE/Skolan för teknikvetenskaplig kommun§§§ (L)">ECE/Skolan för teknikvetenskaplig kommun... (L)</option>
+          <option value="ECE/Utbildningskansli (LAC)">ECE/Utbildningskansli (LAC)</option>
+          <option value="ECE/Ämnessökning och -kurser (LGC)">ECE/Ämnessökning och -kurser (LGC)</option>
+          <option value="EECS/Beräkningsvetenskap  och beräkni§§§ (JHS)">EECS/Beräkningsvetenskap  och beräkni... (JHS)</option>
+          <option value="EECS/Datavetenskap (JH)">EECS/Datavetenskap (JH)</option>
+          <option value="EECS/Elektronik (JGA)">EECS/Elektronik (JGA)</option>
+          <option value="EECS/Elektronik och inbyggda system (JG)">EECS/Elektronik och inbyggda system (JG)</option>
+          <option value="EECS/Elektronik och inbyggda system (JJG)">EECS/Elektronik och inbyggda system (JJG)</option>
+          <option value="EECS/Elektroteknik (JJ)">EECS/Elektroteknik (JJ)</option>
+          <option value="EECS/Elektroteknisk teori och konstruktion (JJI)">EECS/Elektroteknisk teori och konstruktion (JJI)</option>
+          <option value="EECS/Elkraftteknik (JJN)">EECS/Elkraftteknik (JJN)</option>
+          <option value="EECS/Energi och elektroteknik (JJ)">EECS/Energi och elektroteknik (JJ)</option>
+          <option value="EECS/Fusionsplasmafysik (JJD)">EECS/Fusionsplasmafysik (JJD)</option>
+          <option value="EECS/Intelligenta system (JR)">EECS/Intelligenta system (JR)</option>
+          <option value="EECS/Kommunikation (JF)">EECS/Kommunikation (JF)</option>
+          <option value="EECS/Kommunikationssystem (JFA)">EECS/Kommunikationssystem (JFA)</option>
+          <option value="EECS/Kommunikationssystem (JHF)">EECS/Kommunikationssystem (JHF)</option>
+          <option value="EECS/Medieteknik och Interaktonsdesign (JMA)">EECS/Medieteknik och Interaktonsdesign (JMA)</option>
+          <option value="EECS/Mikro-och nanosystem (JRQ)">EECS/Mikro-och nanosystem (JRQ)</option>
+          <option value="EECS/Människocentrerad teknologi (JM)">EECS/Människocentrerad teknologi (JM)</option>
+          <option value="EECS/Nätverk och systemteknik (JHP)">EECS/Nätverk och systemteknik (JHP)</option>
+          <option value="EECS/Programvaruteknik och datorsystem (JHK)">EECS/Programvaruteknik och datorsystem (JHK)</option>
+          <option value="EECS/Reglerteknik (JRL)">EECS/Reglerteknik (JRL)</option>
+          <option value="EECS/Robotik, perception och lärande (JRR)">EECS/Robotik, perception och lärande (JRR)</option>
+          <option value="EECS/Rymd-och Plasmafysik (JJE)">EECS/Rymd-och Plasmafysik (JJE)</option>
+          <option value="EECS/Skolan för elektroteknik och datave§§§ (J)">EECS/Skolan för elektroteknik och datave... (J)</option>
+          <option value="EECS/Tal, musik och hörsel (JRT)">EECS/Tal, musik och hörsel (JRT)</option>
+          <option value="EECS/Teknisk informationsvetenskap (JRO)">EECS/Teknisk informationsvetenskap (JRO)</option>
+          <option value="EECS/Teoretisk datalogi (JHT)">EECS/Teoretisk datalogi (JHT)</option>
+          <option value="EECS/Utbildningskansliet (JBU)">EECS/Utbildningskansliet (JBU)</option>
+          <option value="EES/Elektrisk energiomvandling (EJ)">EES/Elektrisk energiomvandling (EJ)</option>
+          <option value="EES/Elektriska energisystem (EG)">EES/Elektriska energisystem (EG)</option>
+          <option value="EES/Elektroteknisk teori och konstruktion (EI)">EES/Elektroteknisk teori och konstruktion (EI)</option>
+          <option value="EES/Elkraftteknik (EN)">EES/Elkraftteknik (EN)</option>
+          <option value="EES/Fusionsplasmafysik (ED)">EES/Fusionsplasmafysik (ED)</option>
+          <option value="EES/Industriella informations och styrsy§§§ (EH)">EES/Industriella informations och styrsy... (EH)</option>
+          <option value="EES/Kommunikationsnät (EP)">EES/Kommunikationsnät (EP)</option>
+          <option value="EES/Kommunikationsteori (EO)">EES/Kommunikationsteori (EO)</option>
+          <option value="EES/Mikro- och nanosystem (EK)">EES/Mikro- och nanosystem (EK)</option>
+          <option value="EES/Nätverk och systemteknik (EP)">EES/Nätverk och systemteknik (EP)</option>
+          <option value="EES/Reglerteknik (EL)">EES/Reglerteknik (EL)</option>
+          <option value="EES/Rymd- och plasmafysik (EF)">EES/Rymd- och plasmafysik (EF)</option>
+          <option value="EES/Signalbehandling (EM)">EES/Signalbehandling (EM)</option>
+          <option value="EES/Teknisk informationsvetenskap (EO)">EES/Teknisk informationsvetenskap (EO)</option>
+          <option value="GVS/VÄGLEDNING OCH STÖD (TGAC)">GVS/VÄGLEDNING OCH STÖD (TGAC)</option>
+          <option value="Högskolepedagogik (LPB)">Högskolepedagogik (LPB)</option>
+          <option value="ICT/Elektronik (IG)">ICT/Elektronik (IG)</option>
+          <option value="ICT/Elektroniksystem (IE)">ICT/Elektroniksystem (IE)</option>
+          <option value="ICT/ICT UTBILDNINGSFUNKTIONEN (IAD)">ICT/ICT UTBILDNINGSFUNKTIONEN (IAD)</option>
+          <option value="ICT/Informations- och kommunikationsteknik (IA)">ICT/Informations- och kommunikationsteknik (IA)</option>
+          <option value="ICT/Integrerade komponenter och kretsar (IG)">ICT/Integrerade komponenter och kretsar (IG)</option>
+          <option value="ICT/Kommunikation: tjänster och infrast§§§ (IF)">ICT/Kommunikation: tjänster och infrast... (IF)</option>
+          <option value="ICT/Kommunikationssystem (IF)">ICT/Kommunikationssystem (IF)</option>
+          <option value="ICT/Materialfysik (ID)">ICT/Materialfysik (ID)</option>
+          <option value="ICT/Programvaruteknik och Datorsystem (IK)">ICT/Programvaruteknik och Datorsystem (IK)</option>
+          <option value="ITM/Ekv kraft- & värmeteknologi (MJEC)">ITM/Ekv kraft- &amp; värmeteknologi (MJEC)</option>
+          <option value="ITM/Energiteknik - Gru (MJEA)">ITM/Energiteknik - Gru (MJEA)</option>
+          <option value="ITM/Energiteknik (MD)">ITM/Energiteknik (MD)</option>
+          <option value="ITM/Energiteknik (MJ)">ITM/Energiteknik (MJ)</option>
+          <option value="ITM/Genus, organisation och ledning (MAC)">ITM/Genus, organisation och ledning (MAC)</option>
+          <option value="ITM/Hållbar produktionsutveckling (ML)">ITM/Hållbar produktionsutveckling (ML)</option>
+          <option value="ITM/Industriell ekonomi och organisation (ME)">ITM/Industriell ekonomi och organisation (ME)</option>
+          <option value="ITM/Industriell produktion (MG)">ITM/Industriell produktion (MG)</option>
+          <option value="ITM/Industriell teknik och management (MA)">ITM/Industriell teknik och management (MA)</option>
+          <option value="ITM/Lärande (MO)">ITM/Lärande (MO)</option>
+          <option value="ITM/Maskinkonstruktion (MF)">ITM/Maskinkonstruktion (MF)</option>
+          <option value="ITM/Materialvetenskap (MH)">ITM/Materialvetenskap (MH)</option>
+          <option value="ITM/Materialvetenskap (MV)">ITM/Materialvetenskap (MV)</option>
+          <option value="ITM/Tillämpad maskinteknik (ML)">ITM/Tillämpad maskinteknik (ML)</option>
+          <option value="ITM/Utbildningskansli (MAB)">ITM/Utbildningskansli (MAB)</option>
+          <option value="KTH Tal, musik och hörsel (260)">KTH Tal, musik och hörsel (260)</option>
+          <option value="KTH/Universitetsförvaltningen/AUA/VoS (VDVC)">KTH/Universitetsförvaltningen/AUA/VoS (VDVC)</option>
+          <option value="KTH/Utbildningsstöd (EDO) (TG)">KTH/Utbildningsstöd (EDO) (TG)</option>
+          <option value="Lärarutbildning (LPA)">Lärarutbildning (LPA)</option>
+          <option value="RKH">RKH</option>
+          <option value="SCI UTBILDNINGSKANSLI (SAB)">SCI UTBILDNINGSKANSLI (SAB)</option>
+          <option value="SCI/Farkost och flyg (SD)">SCI/Farkost och flyg (SD)</option>
+          <option value="SCI/Fysik (SH)">SCI/Fysik (SH)</option>
+          <option value="SCI/Fysik grundutbildning (SHB)">SCI/Fysik grundutbildning (SHB)</option>
+          <option value="SCI/Hållfasthetslära (SE)">SCI/Hållfasthetslära (SE)</option>
+          <option value="SCI/Matematik (SF)">SCI/Matematik (SF)</option>
+          <option value="SCI/Mekanik (SG)">SCI/Mekanik (SG)</option>
+          <option value="SCI/Teknikvetenskap (SA)">SCI/Teknikvetenskap (SA)</option>
+          <option value="SCI/Teoretisk fysik (SI)">SCI/Teoretisk fysik (SI)</option>
+          <option value="SCI/Teoretisk fysik grundutbildning (SIB)">SCI/Teoretisk fysik grundutbildning (SIB)</option>
+          <option value="SCI/Tillämpad fysik (SK)">SCI/Tillämpad fysik (SK)</option>
+          <option value="SCI/Tillämpad fysik grundutbildning (SKB)">SCI/Tillämpad fysik grundutbildning (SKB)</option>
+          <option value="STH/Bildbehandling och visualisering (HSM)">STH/Bildbehandling och visualisering (HSM)</option>
+          <option value="STH/DASH (HPG)">STH/DASH (HPG)</option>
+          <option value="STH/Data- och Elektroteknik (HSE)">STH/Data- och Elektroteknik (HSE)</option>
+          <option value="STH/Ergonomi (HPN)">STH/Ergonomi (HPN)</option>
+          <option value="STH/Grundläggande naturvetenskap (HLF)">STH/Grundläggande naturvetenskap (HLF)</option>
+          <option value="STH/Klinisk innovation (HPE)">STH/Klinisk innovation (HPE)</option>
+          <option value="STH/Medicinsk bildteknik (HSL)">STH/Medicinsk bildteknik (HSL)</option>
+          <option value="STH/Medicinsk Teknik (HLL)">STH/Medicinsk Teknik (HLL)</option>
+          <option value="STH/Neuronik (HLK)">STH/Neuronik (HLK)</option>
+          <option value="STH/Neuronik (HSN)">STH/Neuronik (HSN)</option>
+          <option value="STH/Omgivningsfysiologi (HLA)">STH/Omgivningsfysiologi (HLA)</option>
+          <option value="STH/Strukturell bioteknik (HLM)">STH/Strukturell bioteknik (HLM)</option>
+          <option value="STH/Systemsäkerhet och organisation (HPC)">STH/Systemsäkerhet och organisation (HPC)</option>
+          <option value="STH/Teknik och hälsa (HA)">STH/Teknik och hälsa (HA)</option>
+          <option value="STH/Teknisk vårdvetenskap (HPCA)">STH/Teknisk vårdvetenskap (HPCA)</option>
+          <option value="STH/Vårdlogistik (HPM)">STH/Vårdlogistik (HPM)</option>
+          <option value="Stockholms universitet (UL)">Stockholms universitet (UL)</option>
+      </select>
+       </div>
+    <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="5" data-basename="Kurs" data-name="Kurs" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Kurs">Lägg till alla: Kurs</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset24" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+                  <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="15" data-param="fe" data-tefieldkind="CATEGORY" data-name="Campus" name="24_84" data-prefix="84" id="ff24_84">
+          <option value="AlbaNova">AlbaNova</option>
+          <option value="Campus Kista">Campus Kista</option>
+          <option value="Handelshögskolan">Handelshögskolan</option>
+          <option value="KI Flemingsberg">KI Flemingsberg</option>
+          <option value="KI Solna">KI Solna</option>
+          <option value="Konstfack">Konstfack</option>
+          <option value="KTH Campus">KTH Campus</option>
+          <option value="KTH Flemingsberg">KTH Flemingsberg</option>
+          <option value="KTH Haninge">KTH Haninge</option>
+          <option value="KTH Kista">KTH Kista</option>
+          <option value="KTH Solna">KTH Solna</option>
+          <option value="KTH Södertälje">KTH Södertälje</option>
+          <option value="Lärarhögskolan">Lärarhögskolan</option>
+          <option value="Stockholms Universitet">Stockholms Universitet</option>
+      </select>
+       </div>
+                                        <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="24" data-basename="Kund" data-name="Kund" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Kund">Lägg till alla: Kund</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset26" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+                  <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="15" data-param="fe" data-tefieldkind="CATEGORY" data-name="Campus" name="26_84" data-prefix="84" id="ff26_84">
+          <option value="AlbaNova">AlbaNova</option>
+          <option value="Campus Kista">Campus Kista</option>
+          <option value="Handelshögskolan">Handelshögskolan</option>
+          <option value="KI Flemingsberg">KI Flemingsberg</option>
+          <option value="KI Solna">KI Solna</option>
+          <option value="Konstfack">Konstfack</option>
+          <option value="KTH Campus">KTH Campus</option>
+          <option value="KTH Flemingsberg">KTH Flemingsberg</option>
+          <option value="KTH Haninge">KTH Haninge</option>
+          <option value="KTH Kista">KTH Kista</option>
+          <option value="KTH Solna">KTH Solna</option>
+          <option value="KTH Södertälje">KTH Södertälje</option>
+          <option value="Lärarhögskolan">Lärarhögskolan</option>
+          <option value="Stockholms Universitet">Stockholms Universitet</option>
+      </select>
+       </div>
+                                        <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="26" data-basename="Förening" data-name="Förening" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Förening">Lägg till alla: Förening</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+  <fieldset id="ffset21" class="fancyfieldset hidden fancyNoBorder">
+  
+    <div class="searchAdvancedFields hidden">
+                  <div class="searchField">
+      <select class="fancyformfieldsearchselect objectFieldsParam " multiple size="15" data-param="fe" data-tefieldkind="CATEGORY" data-name="Campus" name="21_84" data-prefix="84" id="ff21_84">
+          <option value="AlbaNova">AlbaNova</option>
+          <option value="Campus Kista">Campus Kista</option>
+          <option value="Handelshögskolan">Handelshögskolan</option>
+          <option value="KI Flemingsberg">KI Flemingsberg</option>
+          <option value="KI Solna">KI Solna</option>
+          <option value="Konstfack">Konstfack</option>
+          <option value="KTH Campus">KTH Campus</option>
+          <option value="KTH Flemingsberg">KTH Flemingsberg</option>
+          <option value="KTH Haninge">KTH Haninge</option>
+          <option value="KTH Kista">KTH Kista</option>
+          <option value="KTH Solna">KTH Solna</option>
+          <option value="KTH Södertälje">KTH Södertälje</option>
+          <option value="Lärarhögskolan">Lärarhögskolan</option>
+          <option value="Stockholms Universitet">Stockholms Universitet</option>
+      </select>
+       </div>
+    <div class="clearBoth searchAdvancedFieldsButtons">
+      
+       
+        <a href="javascript:void(0)" data-id="21" data-basename="Avdelning" data-name="Avdelning" data-addText="Lägg till alla:" class="searchrescatlink shadedoutline" title="Lägg till alla: Avdelning">Lägg till alla: Avdelning</a>&nbsp; &nbsp; &nbsp; 
+       <a href="javascript:void(0)" data-id="-1" data-name="–" class="searchseparator shadedoutline">Separator +</a>
+      <a href="javascript:void(0)" style="float: right;padding-top: 0.5em;" class="t4small" onclick="ObjectsSearcher.fieldSetSave();ObjectsSearcher.resetSearch();document.fancyformfieldsearch.reset();ObjectsSearcher.fieldSetLoad();ObjectsSearcher.fieldSetsChange();return false;">Återställ</a>
+    </div>
+    </div>
+  </fieldset>
+</form>
+</div>
+
+<div id="searchColumnWrapper" class="searchColumnBox searchAdvancedShow">
+<div class="middlewrapper">
+	<h2 class="ui-widget-header ui-corner-all adminFieldTableHead searchDivHeader searchAdvanced middlesearchwrap searchwraptitle">
+	<span class="middlesearchtitle">Sökresultat</span> <span id="searchTextLegend" class="hidden" data-nomatches="" data-result="" data-search=" Söker"></span>
+	</h2>
+	<div class="fancyform fancyresultform" id="fancyformfieldresult">
+    	<div id="objectsearchresult"><div class="clicksearchicon"></div></div>
+    </div>
+</div>  
+</div>
+<div class="fancyform fancyformInfo" id="fancyformLeft">
+<h2 class="ui-widget-header ui-corner-all adminFieldTableHead searchDivHeader searchAdvanced searchwraptitle">Mina val    
+<a href="javascript:void(0)" id="leftclearbutton" class="leftclearbutton t4small hidden" onclick="return emptyBasket();">Rensa allt</a></h2>
+<div class="favoritecontainer">
+<div id="baskettarget" class="objectbasketwrap searchAdvanced">
+  <div id="objectbaskettext"><div class="emptyBasketicon"></div>
+  <div id="basketSelectText" data-select="Välj minst ett objekt" data-none="Inget valt ännu." class="emptyBasket basketpadded">Inget valt ännu.</div> 
+  </div>
+  <div id="objectbasket" class="basketpadded" data-title="Ta bort"></div>
+  </div>
+    <input id="objectbasketgo" data-mandatory="yes" type="button" data-copy="Kopiera" data-search="Visa schema" value="Visa schema">
+    </div>
+</div>
+<div class="clearBoth"></div>
+</div>
+<div class="clearBoth"></div>
+</div>
+  <hr class="searchsplit">
+    <div id="favoritewrap" class="favoritewrap">
+	  <h2 class="ui-widget-header ui-corner-all adminFieldTableHead searchDivHeader searchAdvanced searchbottom"><span class="tesprite tesprite-history tespritetop"></span>Historik</h2>
+	  <ul class="historylist favoriteitems"><li></li></ul>
+    </div>
+  </div>
+
+
+<div class="overlay" id="footerOverlay" style="display:none;"></div>
+
+<div id="footer" class="topmenu topmenuright" style="display:none;">
+ <ul class="footerLinkList2 expBack" id="footerList">
+      <li class="clickable exp expTab tabcount2" id="mergelinksElement2" title="Layout"><div class="expbox"><span class="tesprite tesprite-merge tespritecenter"></span>Layout</div></li>
+      <li class="clickable exp expTab tabcount2" id="colorlinksElement2" title="Bokningar"><div class="expbox"><span class="tesprite tesprite-color_wheel tespritecenter"></span>Bokningar</div></li>
+  </ul>
+
+<div class="footer2" id="footer2">
+  <div class="flinks" id="colorlinksElement">
+    <div class="rescontenttitle">Färg</div>
+    <ul class="footerLinkList">
+
+
+ 
+<li data-id="" class="hasHelp headlineLink">
+<div class="" title="Färglägg på">
+
+Färglägg på
+<span class="helpicon"></span> <span class="linkhelp">Färger tilldelas från admingränssnittet i <b>TE Core</b> per <b>Typ</b>. <br>Om ett objekt har tilldelats färg i <b>TE Core</b> kommer objektet att få samma färg i <b>TE Viewer</b>. <br>Om inte alla objekt av en <b>Typ</b> har tilldelats färg i <b>TE Core</b>, kan man välja om de resterande objekten ska få en slumpmässig färg eller ingen färg alls i <b>TE Viewer</b>. <br><b>Typer</b> som inte alls har tilldelats färg i <b>TE Core</b>, kommer att få slumpmässiga färger i <b>TE Viewer</b>.</span>
+</div>
+</li>
+
+<select data-name=""  class="droplink">
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn0blWju6xuQa.html#colorlinks">Standard (TimeEdit grön)</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPngblWju6xuQa40.html#colorlinks">Svartvitt</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPngblWju6xuQa49.html#colorlinks">Tillgänglighet</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPngblWju6xuQa45.html#colorlinks">Sökvillkor</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPngblWju6xuQa46.html#colorlinks">Pågående</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn4blWju6xuQa.html#colorlinks">Aktivitet</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn1blWju6xuQa.html#colorlinks">Grupp</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQX66wPnabxWju.html#colorlinks" SELECTED>Kurstillfälle</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn8blWju6xuQa.html#colorlinks">Lokal</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn6blWju6xuQa.html#colorlinks">Person</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn5blWju6xuQa1.html#colorlinks">Program/klass</option>
+    </select>
+    
+
+
+
+
+<li data-id="" class="hasHelp lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncblWju6xbQa.html#colorlinks" class="pagelock checkwrap  linkhelpleft ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncblWju6xbQa.html#colorlinks'" type="checkbox" name="n2" ><span class="checkmark"></span>Färglägg specialbokningar
+<span class="helpicon"></span> <span class="linkhelp">Markerar med en egen färg speciella bokningar och obligatorisk undervisning eller tentamen.</span>
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQblWju6xunao.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQblWju6xunao.html#colorlinks'" type="checkbox" name="n2" checked="checked"><span class="checkmark"></span>Visa färgförklaring
+
+</a>
+</li>
+
+
+
+
+</ul>
+    <div class="headlineLink">Färglägg efter innehåll</div>
+    <ul class="footerLinkList footerColumns">
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Aktivitet">
+
+Aktivitet
+
+</div>
+
+
+<select data-name="Aktivitet" class="fancyformfieldsearchselect hasURL" multiple size=3>
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n06lWQu6x8Qa74uxjPXb0Zu34Yl.html#colorlinks">Föreläsning</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n06lWQu6x8Qa74uxjPXb0Zu41Yl.html#colorlinks">Laboration</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n06lWQu6x9Qa74uxjPXb0Zu06Yl.html#colorlinks">Övning</option>
+    </select>
+    </li>
+
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Grupp">
+
+Grupp
+
+</div>
+
+
+<select data-name="Grupp" class="fancyformfieldsearchselect hasURL" multiple size=3>
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n08lWQu6x9Qa01uxjPXb6Zu05Yl.html#colorlinks">DD1321 Helklass</option>
+    </select>
+    </li>
+
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Kurstillfälle">
+
+Kurstillfälle
+
+</div>
+
+
+<select data-name="Kurstillfälle" class="fancyformfieldsearchselect hasURL" multiple size=3>
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n08lWQu6x3Qa95uxjPXb6Zu58Yl0.html#colorlinks">DD1320</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n08lWQu6x3Qa25uxjPXb5Zu29Yl0.html#colorlinks">DD1321</option>
+    </select>
+    </li>
+
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Lokal">
+
+Lokal
+
+</div>
+
+
+<select data-name="Lokal" class="fancyformfieldsearchselect hasURL" multiple size=3>
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n07lWQu6x6Qa78uxjPXb9Zu47Yl.html#colorlinks">5O1Spe (Spelhallen)</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n07lWQu6x7Qa78uxjPXb9Zu09Yl.html#colorlinks">D1</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n07lWQu6x7Qa78uxjPXb9Zu77Yl.html#colorlinks">V22</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n07lWQu6x7Qa78uxjPXb9Zu80Yl.html#colorlinks">V32</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6w0n07lWQu6x7Qa78uxjPXb9Zu73Yl.html#colorlinks">V35</option>
+</select>
+
+</li>
+</ul>
+    
+    <div class="rescontenttitle">Innehåll</div>
+    <ul class="footerLinkList" id="columnorder">
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Synliga kolumner">
+
+Synliga kolumner
+
+</div>
+</li>
+
+
+
+
+
+<li data-id="" class="smallhelp">
+<div class="" title="Drag och släpp för att ändra ordning">
+
+Drag och släpp för att ändra ordning
+
+</div>
+</li>
+
+
+
+
+
+<li data-id="9-17" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6wPn2b4Wju6xW5a.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6wPn2b4Wju6xW5a.html#colorlinks'" type="checkbox" name="n9" checked="checked"><span class="checkmark"></span>Aktivitet: Benämning sv
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="6-10" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6wPn0b1Wju6xW5a.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6wPn0b1Wju6xW5a.html#colorlinks'" type="checkbox" name="n9" checked="checked"><span class="checkmark"></span>Grupp: Namn
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="10-40-Tillfälleskod/kurskod.5-9- .27-149- .31-65- " class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXXYwut8%C3%A45Wum6xntaumbVjP4ba00xd9WWWtuTnbu6xWoWr6Y5ZZZX72V41VY75WW9W8.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXXYwut8%C3%A45Wum6xntaumbVjP4ba00xd9WWWtuTnbu6xWoWr6Y5ZZZX72V41VY75WW9W8.html#colorlinks'" type="checkbox" name="n9" checked="checked"><span class="checkmark"></span>Tillfälleskod/kurskod, Kurs: Kod, Kansliaktivitet: Kod, Kurstillfälle (RKH): Kursnamn
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="4-24.4-34-ISDETAIL" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6wWn8S8W8u6xT6aE8W7jPIbDYWAIL.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6wWn8S8W8u6xT6aE8W7jPIbDYWAIL.html#colorlinks'" type="checkbox" name="n9" checked="checked"><span class="checkmark"></span>Lokal: Webbsignatur
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="f1-Info.f3- " class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6w7nIVoWou6x5WawoxYjPWb.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXX6w7nIVoWou6x5WawoxYjPWb.html#colorlinks'" type="checkbox" name="n9" checked="checked"><span class="checkmark"></span>Info
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="2-22-Personal" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqYQ5Y5gQ802917QZ79.html#colorlinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqYQ5Y5gQ802917QZ79.html#colorlinks'" type="checkbox" name="n9" ><span class="checkmark"></span>Personal
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="16-53" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017Q66y6Yp80ZZqYn5Y5gQ8029W7QZW6aQPbxwju.html#colorlinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017Q66y6Yp80ZZqYn5Y5gQ8029W7QZW6aQPbxwju.html#colorlinks'" type="checkbox" name="n9" ><span class="checkmark"></span>Program/klass: Program
+
+</a>
+</li>
+
+
+
+
+</ul>
+    <ul class="footerLinkList">
+
+
+ 
+<li data-id="" class="hasHelp headlineLink">
+<div class="" title="Visa ytterligare bokningar">
+
+Visa ytterligare bokningar
+<span class="helpicon"></span> <span class="linkhelp">Utöver vanliga bokningar går det också att visa andra typer av bokningar.</span>
+</div>
+</li>
+
+
+
+
+
+<li data-id="" class="hasHelp lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbvWju6xhQa.html#colorlinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbvWju6xhQa.html#colorlinks'" type="checkbox" name="n11" ><span class="checkmark"></span>Mina bokningar
+<span class="helpicon"></span> <span class="linkhelp">Visa bokningar som jag har gjort själv.</span>
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="hasHelp lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnxbrWju6xwoaQo.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnxbrWju6xwoaQo.html#colorlinks'" type="checkbox" name="n11" checked="checked"><span class="checkmark"></span>Infobokningar
+<span class="helpicon"></span> <span class="linkhelp">Visa helgdagar eller speciella dagar.</span>
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="hasHelp lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnoblWju6xeQa.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnoblWju6xeQa.html#colorlinks'" type="checkbox" name="n11" checked="checked"><span class="checkmark"></span>Avbokningar
+<span class="helpicon"></span> <span class="linkhelp">Visa bokningar som har avbokats.</span>
+</a>
+</li>
+
+
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Bokningsinformation">
+
+Bokningsinformation
+
+</div>
+</li>
+
+
+
+
+
+<li data-id="" class="hasHelp lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbnWju6xbnac.html#colorlinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbnWju6xbnac.html#colorlinks'" type="checkbox" name="n12" checked="checked"><span class="checkmark"></span>Visa sökobjekt i schemat
+<span class="helpicon"></span> <span class="linkhelp">Visar sökta objekt i schemat, om typen är vald som synlig.</span>
+</a>
+</li>
+
+
+
+
+</ul>
+ 
+    <div class="rescontenttitle rescontentpadd">Stil</div>
+    <ul class="footerLinkList">
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Textflöde">
+
+Textflöde
+
+</div>
+</li>
+
+<select data-name=""  class="droplink">
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn0bkWju6xuQa.html#colorlinks">Visa utan radbrytningar</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbkWju6xuQa.html#colorlinks">Visa med radbrytningar</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQX66wPnabxWju.html#colorlinks" SELECTED>Radbrytning per typ</option>
+</select>
+
+
+</ul>
+    <ul class="footerLinkList">
+
+
+</ul>
+    <ul class="footerLinkList">
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Textstorlek">
+
+Textstorlek
+
+</div>
+</li>
+
+
+
+
+
+<li data-id="" class="">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn5boWju6xbQa1.html#colorlinks" class="pagelock underlinedlink   ">
+
+Öka textstorlek
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn5boWju6xbQa5.html#colorlinks" class="pagelock underlinedlink   ">
+
+Minska textstorlek
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQX66wPnabxWju.html#colorlinks" class="pagelock underlinedlink   ">
+
+Återställ textstorlek
+
+</a>
+</li>
+
+
+
+
+</ul>
+  </div>
+  <div class="flinks" id="mergelinksElement">  <div class="rescontenttitle">Sida</div>
+  
+  <ul class="footerLinkList">
+
+
+
+<li data-id="" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbbWju6xnlao.html#mergelinks" class="pagelock checkwrap   bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbbWju6xnlao.html#mergelinks'" type="checkbox" name="n18" checked="checked"><span class="checkmark"></span>Dölj tomma kolumner
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="hasHelp lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbmWju6xlQa.html#mergelinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbmWju6xlQa.html#mergelinks'" type="checkbox" name="n18" ><span class="checkmark"></span>Visa klocka
+<span class="helpicon"></span> <span class="linkhelp">Visar aktuell tid i sidans nedre vänstra hörn.</span>
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="hasHelp lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbyWju6xyQa.html#mergelinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbyWju6xyQa.html#mergelinks'" type="checkbox" name="n18" ><span class="checkmark"></span>Ett schema per sökobjekt
+<span class="helpicon"></span> <span class="linkhelp">Skapar ett separat schema för varje objekt som valdes i sökinställningarna.</span>
+</a>
+</li>
+
+
+
+
+</ul>
+  <ul class="footerLinkList">
+
+
+ 
+<li data-id="" class="headlineLink">
+<div class="" title="Sortering">
+
+Sortering
+
+</div>
+</li>
+
+<select data-name=""  class="droplink">
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQX66wPnabxWju.html#mergelinks" SELECTED>Tid stigande</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn7bbWju6xxQa.html#mergelinks">Tid fallande</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn8bbWju6xxQa.html#mergelinks">Ändrad stigande</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPn9bbWju6xxQa.html#mergelinks">Ändrad fallande</option>
+</select>
+
+
+</ul>
+  <ul class="footerLinkList">
+
+
+ 
+<li data-id="" class="hasHelp headlineLink">
+<div class="" title="Gruppera efter">
+
+Gruppera efter
+<span class="helpicon"></span> <span class="linkhelp">Gruppera bokningar baserat på tid eller objekt.</span>
+</div>
+</li>
+
+<select data-name=""  class="droplink">
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQW5.html#mergelinks">Av</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQW.html#mergelinks" SELECTED>Dagar</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQW6.html#mergelinks">Veckor</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQ4.html#mergelinks">Aktivitet</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQ1.html#mergelinks">Grupp</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQ50.html#mergelinks">Kurstillfälle</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQ8.html#mergelinks">Lokal</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQ6.html#mergelinks">Person</option>
+
+<option value="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbbWju6xxaaQ51.html#mergelinks">Program/klass</option>
+</select>
+
+
+</ul>
+  <ul class="footerLinkList">
+
+
+
+<li data-id="" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri161XQq530Z55Qv57017l66y7Yl80QZWYW5Y5gQ8029X79Z6WPQ6nabxwju.html#mergelinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri161XQq530Z55Qv57017l66y7Yl80QZWYW5Y5gQ8029X79Z6WPQ6nabxwju.html#mergelinks'" type="checkbox" name="n23" ><span class="checkmark"></span>Visa grafiskt schema
+
+</a>
+</li>
+
+
+
+
+</ul>
+
+  <form method="get" action="" id="gtitle"  onsubmit="return false" class="clearBoth">
+   <ul class="footerLinkList">
+	<li>
+    <div class="headlineLink">Rubrik</div>
+    <input type="text" name="title" id="gtitlevalue" value="" style="width:320px">
+    <input type="button" class="green" style="width:327px" id="titlegenerate" onclick="updateTitlelink('https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal','#mergelinks')" title="Ändra rubrik" value="Ändra rubrik">
+   </li>
+   </ul>
+  </form>
+  
+  <div class="rescontenttitle">Tid</div>
+  <ul class="footerLinkList">
+
+
+</ul>
+  <form method="get" action="" id="gtimeform">
+    <ul class="footerLinkList">
+  	<li>
+	<div class="headlineLink hasHelp">Tidsintervall  <span class="helpicon"></span> <span class="linkhelp">Bestämmer mellan vilka klockslag bokningar ska visas.</span></div>
+  	<table cellpadding=0 cellspacing=0><tr><td class="footertd">
+  	Starttid</td><td class="footertd">
+    <select name="gstarttime" id="gstarttime"  onchange="updateTimelink('https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal','#mergelinks')">
+      <option value="0.00">0</option><option value="1.00">1</option><option value="2.00">2</option><option value="3.00">3</option><option value="4.00">4</option><option value="5.00">5</option><option value="6.00">6</option><option value="7.00">7</option><option SELECTED value="8.00">8</option><option value="9.00">9</option><option value="10.00">10</option><option value="11.00">11</option><option value="12.00">12</option><option value="13.00">13</option><option value="14.00">14</option><option value="15.00">15</option><option value="16.00">16</option><option value="17.00">17</option><option value="18.00">18</option><option value="19.00">19</option><option value="20.00">20</option><option value="21.00">21</option><option value="22.00">22</option><option value="23.00">23</option><option value="24.00">24</option>   
+	</select>
+	</td></tr><tr><td class="footertd">Sluttid</td><td class="footertd">
+    <select name="gendtime" id="gendtime" onchange="updateTimelink('https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal','#mergelinks')">
+      <option value="0.00">0</option><option value="1.00">1</option><option value="2.00">2</option><option value="3.00">3</option><option value="4.00">4</option><option value="5.00">5</option><option value="6.00">6</option><option value="7.00">7</option><option value="8.00">8</option><option value="9.00">9</option><option value="10.00">10</option><option value="11.00">11</option><option value="12.00">12</option><option value="13.00">13</option><option value="14.00">14</option><option value="15.00">15</option><option value="16.00">16</option><option value="17.00">17</option><option SELECTED value="18.00">18</option><option value="19.00">19</option><option value="20.00">20</option><option value="21.00">21</option><option value="22.00">22</option><option value="23.00">23</option><option value="24.00">24</option>   
+	</select>
+	</td></tr>
+	</table>
+	</li>
+
+
+
+
+<li data-id="" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbjWju6xqQa.html#mergelinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbjWju6xqQa.html#mergelinks'" type="checkbox" name="n25" ><span class="checkmark"></span>Utöka start- och sluttid så att alla bokningar visas.
+
+</a>
+</li>
+
+
+
+
+
+<li data-id="" class="lefttext">
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbjWju6xqoac.html#mergelinks" class="pagelock checkwrap   ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbjWju6xqoac.html#mergelinks'" type="checkbox" name="n25" ><span class="checkmark"></span>Visa endast bokningar inom start- och sluttid.
+
+</a>
+</li>
+
+
+
+
+   </ul>
+   </form>
+
+  <div class="rescontenttitle">Tidsformat</div><ul class="footerLinkList">
+
+
+ 
+<li data-id="" class="hasHelp headlineLink">
+<div class="" title="Datum">
+
+Datum
+<span class="helpicon"></span> <span class="linkhelp">Tidigare benämning <b>Kort datumformat</b>.</span>
+</div>
+</li>
+
+
+
+<li>
+
+
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbmWju6xbQa.html#mergelinks" class="pagelock checkwrap radiowrap  ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPncbmWju6xbQa.html#mergelinks'" type="radio" name="n27" ><span class="checkmark radiomark"></span>Kort: 21/2 (d/m)
+
+</a>
+
+
+
+
+
+
+
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnobmWju6xbQa.html#mergelinks" class="pagelock checkwrap radiowrap  bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnobmWju6xbQa.html#mergelinks'" type="radio" name="n27" checked="checked"><span class="checkmark radiomark"></span>Långt: 2020-02-21 (yyyy-mm-dd)
+
+</a>
+
+
+
+</li>
+
+ 
+<li data-id="" class="hasHelp headlineLink">
+<div class="" title="Veckodag">
+
+Veckodag
+<span class="helpicon"></span> <span class="linkhelp">Tidigare benämning <b>Korta veckodagsnamn</b>.</span>
+</div>
+</li>
+
+
+
+
+
+
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbcWju6xlmac.html#mergelinks" class="pagelock checkwrap radiowrap  bthigh">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbcWju6xlmac.html#mergelinks'" type="radio" name="n28" checked="checked"><span class="checkmark radiomark"></span>Kort: Må, Ti, On, To, Fr
+
+</a>
+
+
+
+
+
+
+
+<a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbcWju6xlmao.html#mergelinks" class="pagelock checkwrap radiowrap  ">
+
+<input onClick="window.location='https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbcWju6xlmao.html#mergelinks'" type="radio" name="n28" ><span class="checkmark radiomark"></span>Långt: Måndag, Tisdag, Onsdag, Torsdag, Fredag
+
+</a>
+
+
+
+
+
+</ul>
+    </div>
+  <div class="flinks" id="adminlinksElement"><div class="rescontenttitle">Administratörsinställningar</div>
+  </div>
+</div>
+
+
+</div>
+
+<a href="#iCalDialogContent" class="iCalDialog clickable rightHeader headerbutton iCalDialogInside  ac iosboxvisible"><span class="tesprite tesprite-date tespriteinlineblock"></span><span>Prenumerera</span></a>
+
+<div id="exporterwrap" class="topmenu topmenuright hidden">
+  <ul class="footerLinkList">
+  <h3>Ladda ner</h3>
+  	<li class="formatLinksItem ">
+     </li>
+  	<li class="formatLinksItem ">
+       <a href="#printdialog"  data-target="print" class="printlink"><span class="tesprite tesprite-page_pdf tespritefloatleft"></span>PDF dokument (Skriv ut)</a>
+     </li>
+  	<li class="formatLinksItem ">
+       <a href="https://cloud.timeedit.net/kth/web/public01/ri.ics?sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;cch=16-53%2C2-22-Personal&amp;e=200221&amp;enol=t&amp;ku=29&amp;k=76E5D0A2866500FF2006006B686ACD45A009" title="iCal"><span class="tesprite tesprite-page_ical tespritefloatleft"></span> iCal</a>
+     </li>
+  	<li class="formatLinksItem ">
+       <a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQX66wPnabxWju.xls" target="_blank" title="Excel"><span class="tesprite tesprite-page_white_excel tespritefloatleft"></span> Excel</a>
+     </li>
+  	<li class="formatLinksItem ">
+       <a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQX66wPnabxWju.txt" target="_blank" title="Text"><span class="tesprite tesprite-page_txt tespritefloatleft"></span> Text</a>
+     </li>
+  	<li class="formatLinksItem ">
+       <a href="https://cloud.timeedit.net/kth/web/public01/ri16lXQo530Z5lQv57017QW6y5Yp80ZZqY65Y5gQ802917QZ79WQXZ6wPnQbbWju6xnyaX.csv" target="_blank" title="CSV"><span class="tesprite tesprite-page_csv tespritefloatleft"></span> CSV</a>
+     </li>
+  	<li class="formatLinksItem ">
+       <a href="https://cloud.timeedit.net/kth/web/public01/ri.html?h=f&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal&amp;h2=2" target="_blank" title="Helskärm"><span class="tesprite tesprite-fullscreen tespritefloatleft"></span> Helskärm</a>
+     </li>
+  	</ul>
+</div>
+
+<div id="filterwrap" class="topmenu topmenuright hidden">
+  <h3>Filter</h3>
+     <a href="javascript:void(0)" class="clearFilter" onclick="return clearFilter('https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal','#contentlinks');">Rensa filter</a>
+     <ul class="footerLinkList footerColumns" id="oxFilter">
+
+
+
+<li data-id="" class="headlineLink">
+<div class="" title="Aktivitet">
+
+Aktivitet
+
+</div>
+
+
+<select data-name="" class="fancyformfieldsearchselect" multiple size=3>
+<option value="203489.9">Föreläsning</option>
+
+
+<option value="203496.9">Laboration</option>
+
+
+<option value="203502.9">Övning</option>
+
+    </select>
+    </li>
+
+
+
+
+<li data-id="" class="headlineLink">
+<div class="" title="Grupp">
+
+Grupp
+
+</div>
+
+
+<select data-name="" class="fancyformfieldsearchselect" multiple size=3>
+<option value="420501.6">DD1321 Helklass</option>
+
+    </select>
+    </li>
+
+
+
+
+<li data-id="" class="headlineLink">
+<div class="" title="Kurstillfälle">
+
+Kurstillfälle
+
+</div>
+
+
+<select data-name="" class="fancyformfieldsearchselect" multiple size=3>
+<option value="425814.10">DD1320-1 (VT20), DD1320, Tillämpad datalogi, Applied Computer Science, CELTE2. CELTE3, Sten Andersson, stene@kth.se, Viggo Kann, viggo@kth.se, 1- 20201 3-23, https://www.kth.se/social/course/DD1320, EECS/Datavetenskap (JH), KTH Campus</option>
+
+
+<option value="417875.10">DD1321-1 (HT19), DD1321, Tillämpad programmering och datalogi, Applied Programming and Computer Science, CDEPR3-FOR. CDEPR3-INE. CDEPR3-IPDC. CDEPR3-IPDE. CDEPR3-IPUA. CDEPR3-IPUB. CDEPR3-IPUC. CDEPR3-MRS. CDEPR3-TEMA. CDEPR3-TEMB. CDEPR3-TEMC. CMAST3-AEE. CMAST3-FOR. CMAST3-INE. CMAST3-IPDE. CMAST3-IPUA. CMAST3-IPUB. CMAST3-IPUC. CMAST3-MRS. CMAST3-MTH. CMAST3-NEE. CMAST3-PRM. CMAST3-SUE. CMAST3-SUT. CMAST3-TEMA. CMAST3-TEMB. CMAST3-TEMC. CSAMH3-GIT, Alexander Baltatzis, alba@kth.se, Viggo Kann, viggo@kth.se, 1- 20192 44-3. 2- 20201 3-11, https://www.kth.se/social/course/DD1321, EECS/Datavetenskap (JH), KTH Campus</option>
+
+    </select>
+    </li>
+
+
+
+
+<li data-id="" class="headlineLink">
+<div class="" title="Lokal">
+
+Lokal
+
+</div>
+
+
+<select data-name="" class="fancyformfieldsearchselect" multiple size=3>
+<option value="353293.4">5O1Spe (Spelhallen)</option>
+
+
+<option value="353305.4">D1</option>
+
+
+<option value="353333.4">V22</option>
+
+
+<option value="353340.4">V32</option>
+
+
+<option value="353338.4">V35</option>
+
+    </select>
+    </li>
+
+
+
+
+<li data-id="" class="headlineLink">
+<div class="" title="Person">
+
+Person
+
+</div>
+
+
+<select data-name="" class="fancyformfieldsearchselect" multiple size=3>
+<option value="358543.2">Alexander Baltatzis</option>
+
+
+<option value="395323.2">Marko Petrovic</option>
+
+    </select>
+    </li>
+
+
+
+
+<li data-id="" class="headlineLink">
+<div class="" title="Program/klass">
+
+Program/klass
+
+</div>
+
+
+<select data-name="" class="fancyformfieldsearchselect" multiple size=3>
+<option value="386055.16">CDEPR3-FOR</option>
+
+
+<option value="386056.16">CDEPR3-INE</option>
+
+
+<option value="386057.16">CDEPR3-IPDC</option>
+
+
+<option value="389072.16">CDEPR3-IPDE</option>
+
+
+<option value="386058.16">CDEPR3-IPUA</option>
+
+
+<option value="386059.16">CDEPR3-IPUB</option>
+
+
+<option value="386060.16">CDEPR3-IPUC</option>
+
+
+<option value="386061.16">CDEPR3-MRS</option>
+
+
+<option value="386065.16">CDEPR3-TEMA</option>
+
+
+<option value="386066.16">CDEPR3-TEMB</option>
+
+
+<option value="386067.16">CDEPR3-TEMC</option>
+
+
+<option value="386289.16">CELTE2</option>
+
+
+<option value="386103.16">CELTE3</option>
+
+
+<option value="386315.16">CINEK2-DKOI</option>
+
+
+<option value="386318.16">CINEK2-TMAI</option>
+
+
+<option value="386105.16">CMAST3-AEE</option>
+
+
+<option value="386106.16">CMAST3-FOR</option>
+
+
+<option value="386107.16">CMAST3-INE</option>
+
+
+<option value="389095.16">CMAST3-IPDE</option>
+
+
+<option value="386111.16">CMAST3-IPUA</option>
+
+
+<option value="386112.16">CMAST3-IPUB</option>
+
+
+<option value="386113.16">CMAST3-IPUC</option>
+
+
+<option value="386114.16">CMAST3-MRS</option>
+
+
+<option value="386115.16">CMAST3-MTH</option>
+
+
+<option value="386116.16">CMAST3-NEE</option>
+
+
+<option value="386117.16">CMAST3-PRM</option>
+
+
+<option value="386118.16">CMAST3-SUE</option>
+
+
+<option value="386119.16">CMAST3-SUT</option>
+
+
+<option value="386120.16">CMAST3-TEMA</option>
+
+
+<option value="386121.16">CMAST3-TEMB</option>
+
+
+<option value="386122.16">CMAST3-TEMC</option>
+
+
+<option value="386126.16">CSAMH3-GIT</option>
+
+</select>
+
+</li>
+</ul>
+     <input class="greenbottom" type="button" onclick="javascript:updateFilter('https://cloud.timeedit.net/kth/web/public01/ri.html?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal','#contentlinks')" value="Filtrera efter">  
+</div>
+
+<div id="printwrap" class="topmenu topmenuright hidden">
+   <form id="printdialog" method="get" action="" target="_blank">
+    <h3>PDF dokument (Skriv ut)</h3>
+    <div class="printsectionlong"><div class="printtitle">Rubrik</div>
+       <input type="text" name="title" id="pdftitle" value="">
+	</div>
+    <div class="printsection"><div class="printtitle">Pappersformat</div>
+    <select name="pdfpagesize" id="pdfpagesize" class="selectMedium">
+		 <option  value="A1">A1</option>
+		 <option  value="A2">A2</option>
+		 <option  value="A3">A3</option>
+		 <option SELECTED value="A4">A4</option>
+		 <option  value="A5">A5</option>
+	</select>
+	</div>
+	<div class="printsection"><div class="printtitle">Riktning</div>
+    <select name="pdfstanding" id="pdfstanding" class="selectMedium">
+        <option value="t">Stående</option>
+	    <option selected value="f">Liggande</option>
+	</select>
+	</div>
+	<div class="printsection"><div class="printtitle">Linjer</div>
+    <select name="pdflined" id="pdflined" class="selectMedium">
+        <option  value="0">Av</option>
+        <option  value="1">Linjerat</option>
+        <option selected value="2">Rutat</option>
+	</select>
+	</div>
+	<div class="printsection"><div class="printtitle">Textstorlek</div>
+    <select name="pdffontsize" id="pdffontsize" class="selectMedium">
+        <option  value="5">5</option>
+        <option  value="6">6</option>
+        <option  value="7">7</option>
+        <option  value="8">8</option>
+        <option  selected  value="9">9</option>
+        <option  value="10">10</option>
+        <option  value="11">11</option>
+        <option  value="12">12</option>
+        <option  value="13">13</option>
+	</select>
+	</div>
+	<div class="printsection"><div class="printtitle">Färg</div>
+    <select name="pdfcolor" id="pdfcolor" class="selectMedium">
+        
+        <option  selected  value="x90">Svartvitt</option>
+        <option value="">Ja</option>
+	</select>
+	</div>
+    <div class="printsection"><div class="printtitle">Sidhuvud och sidfot</div>
+    <select name="pdfheader" id="pdfheader" class="selectMedium">
+        <option selected value="0">Båda</option>
+        <option value="1">Sidhuvud</option>
+        <option value="2">Sidfot</option>
+        <option value="3">Av</option>
+	</select>
+	</div>
+    <input type="button" id="pdfgenerate" class="greenbottom" onclick="updatePdflink('https://cloud.timeedit.net/kth/web/public01/ri.pdf?h=t&amp;sid=7&amp;p=0.m%2C20200114.x&amp;objects=381614.5&amp;ox=0&amp;types=0&amp;fe=0&amp;g=f&amp;cch=16-53%2C2-22-Personal','')" value="Skapa PDF">
+   </form>
+</div>
+
+<div class="headerbutton btrFirst2 iosboxvisible">
+<a class="leftHeader clickable btr  ac" href="https://cloud.timeedit.net/kth/web/public01/ri15o01Z050Z5QQ6396787Q0yl0Q6Wp7Z0961Q0Q5625qZl6157YWw6a66WPjWbxXnu.html"><span class="btrLeft">&nbsp;</span><div class="help">Gå till föregående vecka</div></a>
+<span class="leftHeader leftHeaderSmall leftHeaderSmall2 ac">v 8</span>
+<a class="leftHeader clickable btr  ac" href="https://cloud.timeedit.net/kth/web/public01/ri16o05Z058Z0QQ6396787Q0yl0Q6Wp7Z0961Q0Q5625qZl7157YWw6a66WPjWbxXnu.html"><span class="btrRight">&nbsp;</span><div class="help">Gå till nästa vecka</div></a>
+<br class="clearBoth">
+</div>
+
+
+ <div id="iCalDialogContent" class="topmenu topmenuright hidden">
+     <h3>Prenumerera</h3>
+     Tid <select class="te-ui-select ui-corner-all timeselect" id="periodical" name="periodical">
+        <option value="https://cloud.timeedit.net/kth/web/public01/ri65bQlPYq1ZZaQ51W65XWZ7yjZ695n6x7089QQQW327ulw7Qn066FCtA33DDtF96ZCA6C75FQd14155BF1EBBDE1Q49Z1C.ics" selected="SELECTED" data-url="https://cloud.timeedit.net/kth/web/public01/ri651Qn1Y61ZZ9Q56460QQ67yEZt95AZ87A8t0QQZ32d4QA7A3F6DAFE3B56FD624D879E4.ics">Rullande 2 veckor</option>
+        <option value="https://cloud.timeedit.net/kth/web/public01/ri65bQlPYq1ZZaQ51W85XWZ7yjZ695n6x7089QQQW327ulw7Qn0665At6B830tFE6Z7060697Qd54D00C08030D90QDDZF78AB.ics"  data-url="https://cloud.timeedit.net/kth/web/public01/ri65EQnDY61ZZ4Q56480QQ97y8Zt957ZD728t0QQZ32d8Q277B36874E2E4ACA2923B79AA.ics">Rullande 4 veckor</option>
+        <option value="https://cloud.timeedit.net/kth/web/public01/ri661XQq530Z55Qv57017l66y7Yl80QZWYW5Y5gQ8029X79Z6WPQ601ntCtE0bZFnZC2j7BB3Qx6u8d6423QCZ0B6w06aBAQF4011305D18A8B.ics"  data-url="https://cloud.timeedit.net/kth/web/public01/ri666XQ6530Z50Qv57017Q66ydYn800ZZYQ5Y5gQ8029Q7tZZ4DQt4995349AE42DDBDDDEA7493913E8CC9.ics">Nu - 2020-02-27</option>
+     </select>
+     <p id="icaltext" class="icalsubtext">Kopiera och klistra in följande adress i ett kalenderprogram. Bokningar som infaller mer än 14 dagar bakåt i tiden kommer inte med prenumerationen.</p>
+     <input id="icalurl" class="icalurl" type="text" value="https://cloud.timeedit.net/kth/web/public01/ri65bQlPYq1ZZaQ51W65XWZ7yjZ695n6x7089QQQW327ulw7Qn066FCtA33DDtF96ZCA6C75FQd14155BF1EBBDE1Q49Z1C.ics">
+     <a id="icalurl2" href="https://cloud.timeedit.net/kth/web/public01/ri65bQlPYq1ZZaQ51W65XWZ7yjZ695n6x7089QQQW327ulw7Qn066FCtA33DDtF96ZCA6C75FQd14155BF1EBBDE1Q49Z1C.ics" class="icalsublink shaded">iPhone & iPad: Länk för prenumeration</a>
+
+     <div id="gcalwrap" class="gcal hidden">
+     <span class="icalsubtext">OBS! Google Calendar stödjer inte adresser längre än 255 tecken, använd nedanstående adress istället.</span>
+     <input id="icalurlgoogle" class="icalurl" type="text" value="https://cloud.timeedit.net/kth/web/public01/ri651Qn1Y61ZZ9Q56460QQ67yEZt95AZ87A8t0QQZ32d4QA7A3F6DAFE3B56FD624D879E4.ics">
+     </div>
+     <span class="tipsical"><table border="0">
+<tr>
+<td>
+<td valign=top>
+Lägg till i Outlook (Ej Mac OSX)
+<br>
+1.	Öppna Outlook på din dator
+<br>
+2.	Öppna kalendern
+<br>
+3.	Högerklicka på "Andra kalendrar"
+<br>
+4.	Välj "Lägg till kalender" och "Från Internet"
+<br>
+5.	Klistra in länken och klicka på OK
+<br>
+6.	Klicka JA
+<br>
+</td>
+<td valign=top>
+Lägg till i Kalender i Mac OSX
+<br>
+1.	Öppna Kalender
+<br>
+2.	Klicka på Arkiv
+<br>
+3.	Välj "Ny kalenderprenumeration"
+<br>
+4.	Klistra in länken och välj Prenumerera
+
+</td>
+
+<td valign=top>
+Lägg till i Kalender i Gmail
+<br>
+1.	Öppna kalendern
+<br>
+2.	Klicka på pilen bredvid Andra kalendrar
+<br>
+3.	Välj Lägg till webbadress"
+<br>
+4.	Klistra in länken och välj Lägg till kalender
+
+</td>
+
+
+</tr>
+</table></span>
+ </div>
+
+ 
+
+
+<div id="contents" class="ewrap expandtab2content">
+<div id="texttable">
+  <table cellspacing="0" class="restable">
+
+<tr><td colspan="30">
+
+
+
+</td></tr>
+
+
+      
+        <tr class="columnHeaders">
+          <td class="modifiedRecentlyTd"></td>
+          <td class="timepadd">Tid</td>
+          
+            <td>Aktivitet</td>
+            <td>Grupp</td>
+            <td>Tillfälleskod/kurskod</td>
+            <td>Lokal</td>
+            <td>Info</td>
+           
+        </tr> 
+
+
+               <tr>
+     	    <td class="weekColumn  t">v 9</td>
+     	    <td colspan="2" class="headline t ">Må 2020-02-24<span class="weekin"> v 9</span></td>
+     	  <td class="headline rightRounded  t" colspan="5"></td>
+		</tr>
+        <tr data-id="331798"  class="rr clickable2" onclick="openRes(331798, this, 'time331798','&step=0')">
+          <td class="modifiedRecentlyTd"></td>
+          
+          <td id="time331798" class="time tt  c2 " title="ID 331798">15:00 - 17:00</td>
+                <td  class="column0 columnLine nw c2">Laboration</td>
+                <td  class="column1 columnLine nw c2">DD1321 Helklass</td>
+                <td  class="column0 columnLine nw c2">DD1321</td>
+                <td  class="column1 columnLine c2">5O1Spe (Spelhallen)</td>
+                <td  class="column0 columnLine nw c2"></td>
+        </tr>
+        
+      
+
+
+               <tr data-id="327950"  class="rr clickable2" onclick="openRes(327950, this, 'time327950','&step=0')">
+          <td class="modifiedRecentlyTd"></td>
+          
+          <td id="time327950" class="time tt  c-95 " title="ID 327950">17:00 - 20:00</td>
+                <td  class="column0 columnLine nw c-95">Laboration</td>
+                <td  class="column1 columnLine nw c-95"></td>
+                <td  class="column0 columnLine nw c-95">DD1320, DD1321</td>
+                <td  class="column1 columnLine nw c-95"></td>
+                <td  class="column0 columnLine nw c-95">Hjälptid</td>
+        </tr>
+        
+      
+
+
+               <tr>
+     	    <td class="weekColumn t">&nbsp;</td>
+     	    <td colspan="2" class="headline t ">Ti 2020-02-25</td>
+     	  <td class="headline rightRounded  t" colspan="5"></td>
+		</tr>
+        <tr data-id="331799"  class="rr clickable2" onclick="openRes(331799, this, 'time331799','&step=0')">
+          <td class="modifiedRecentlyTd"></td>
+          
+          <td id="time331799" class="time tt  c2 " title="ID 331799">15:00 - 17:00</td>
+                <td  class="column0 columnLine nw c2">Föreläsning</td>
+                <td  class="column1 columnLine nw c2">DD1321 Helklass</td>
+                <td  class="column0 columnLine nw c2">DD1321</td>
+                <td  class="column1 columnLine nw c2">D1</td>
+                <td  class="column0 columnLine nw c2"></td>
+        </tr>
+        
+      
+
+
+               <tr>
+     	    <td class="weekColumn t">&nbsp;</td>
+     	    <td colspan="2" class="headline t ">To 2020-02-27</td>
+     	  <td class="headline rightRounded  t" colspan="5"></td>
+		</tr>
+        <tr data-id="331800"  class="rr clickable2" onclick="openRes(331800, this, 'time331800','&step=0')">
+          <td class="modifiedRecentlyTd"></td>
+          
+          <td id="time331800" class="time tt  c2 " title="ID 331800">13:00 - 15:00</td>
+                <td  class="column0 columnLine nw c2">Övning</td>
+                <td  class="column1 columnLine nw c2">DD1321 Helklass</td>
+                <td  class="column0 columnLine nw c2">DD1321</td>
+                <td  class="column1 columnLine nw c2">V22, V32, V35</td>
+                <td  class="column0 columnLine nw c2"></td>
+        </tr>
+        
+
+   
+
+
+</table>
+<div class="customWrap">
+<div class="customTitleObjectsWrap"><table cellspacing="0" class="clearBoth customTitleObjects">
+<tr class="hoverlink clickable" onclick="openObject(425814, this, '')"><td class="customTitleName">DD1320</td><td>Tillämpad datalogi</td></tr>
+
+<tr class="hoverlink clickable" onclick="openObject(417875, this, '')"><td class="customTitleName">DD1321</td><td>Tillämpad programmering och datalogi</td></tr>
+</table></div><div class="customTitleObjectsWrap"><table cellspacing="0" class="clearBoth customTitleObjects">
+</table></div>
+<br class="clearBoth">
+</div>
+<div id="nextPage1000" class="skipids clearBoth" data-colorids="425814,417875" style="display: none">
+    	     <div class="xDD1320 colorInnerWrapper"><div class="color c1">&nbsp;</div> DD1320</div>
+    	     <div class="xDD1321 colorInnerWrapper"><div class="color c2">&nbsp;</div> DD1321</div>
+</div></div>
+<div id="errorPage" style="display: none"></div>
+
+<div id="colorExplanation" class="colorexplainwrap">
+    
+    <div id="colorExplanationInner" class="colorTextLong">
+    <div id="colorExplanationList">
+  	
+  	  
+  	  <div title="DD1320" class="colorInnerWrapper"><div class="color c1">&nbsp;</div>DD1320</div>
+  	  <div title="DD1321" class="colorInnerWrapper"><div class="color c2">&nbsp;</div>DD1321</div>
+  	  <div class="colorInnerWrapper"><div class="color c-95">&nbsp;</div>Flera Kurstillfälle</div>
+  	  
+  	  
+  	  
+  	</div>
+  </div>
+<div class="toolbar ac">
+   
+   <span class="hidereswrap">
+	<a href="#" onclick="HideReservations.enable();return false;" class="clickable toollink"><span class="tesprite tesprite-eye tespriteinline"></span> <span class="lightlink"><span class="noZoom">Dölj bokningar</span></span></a>
+	<div class="hideresbox hidden">
+	  <a class="txtRange-close" onclick="HideReservations.disable();return false;"></a>
+	  <div style="margin:1em; margin-right: 2em;">Klicka på de bokningar du vill dölja.</div>
+	  <input type="button" class="greenbottom" onclick="HideReservations.hideSelected();return false;" value="Spara">
+	</div>
+	</span>
+        <a href="https://cloud.timeedit.net/kth/web/public01/riqvQQY76ZXZ8pQy7Y2Q5Qq06lZ706Z9o0W0555Q3Yo1lgZ55Q981xXnW6ZWw6ab7Pju6q6Qo.html" onclick="Stats3.call('toolbar-LinkToThisPage')" class="clickable toollink" target="_blank"><span class="tesprite tesprite-link tespriteinline"></span> <span class="lightlink"><span class="noZoom">Länk till detta schema</span></span></a>
+        <a href="https://cloud.timeedit.net/kth/web/public01/ri161XQq530Z55Qv57017l66y7Yl80QZWYW5Y5gQ8029X79Z6WPQ6nabxwju.html" onclick="Stats3.call('toolbar-Toggle_Graph')" class="clickable toollink"><span class="tesprite tesprite-grapical tespriteinline"></span> <span class="lightlink"><span class="noZoom">Grafiskt schema</span></span></a>
+</div>
+</div>
+<br><br><br><br>
+</div>
+
+
+
+
+<script type="text/javascript">
+window.timers = window.timers || [];
+window.beforeload = window.beforeload || (new Date()).getTime();
+
+function loadScript(url, callback){
+    timers.push('loadscript ' + ((new Date()).getTime() - beforeload) + 'ms');
+    var script = document.createElement("script")
+    script.type = "text/javascript";
+    if (script.readyState){ 
+        script.onreadystatechange = function(){
+            if (script.readyState == "loaded" ||
+                    script.readyState == "complete"){
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    } else {  
+        script.onload = function(){
+            callback();
+        };
+    }
+    script.src = url;
+    document.getElementsByTagName("head")[0].appendChild(script);
+}
+
+var loadMyRes = function() {
+    var sid = Qt.join('&sid', $('#linksdata').attr('data-sid'));
+    var url = 'my.html?so=5&p=0.m,20200114.x&max=5&part=t&step=3&g=f' + sid;
+    $('#myreservationslist').load(url);
+}
+
+var PageLoaderNext;
+function initAutoPager(nr, callback) {
+	var pages = $('#pagesData' + nr).attr('data-pagesjson');
+	try {
+		pages = jQuery.parseJSON(pages);
+	} catch(e) {
+		$("#errorPage" + nr).html('Invalid auto page info.' + e).fadeIn();
+	}
+	if(!pages) {
+	   return;
+	}
+	var loading = false;
+	var loadOK = true;
+	var next = pages.start;
+
+	function nextUrl() {
+		var link = $('#linksdata' + nr).attr('data-linksbase');
+		var url = link.split('?');
+		var path = url[1].split('&');
+		if (nr == "_o") {
+			setParam(path, 'start', next);
+		} else {
+			setParam(path, 'start', next);
+		}
+		if ((next + pages.max) >= pages.total) {
+		  setParam(path, 'end', '1');
+		}
+		var data = $('.skipids');
+		if(data.length > 0) {
+	      var color = $(data[data.length -1]);
+		  setParam(path, 'colorids', color.attr('data-colorids'));
+		}
+		return url[0] + '?' + path.join('&') + '&part=t&media=html';
+	}
+
+
+
+	function page() {
+		return (1 + next / pages.max);
+	}
+
+
+
+	function loadCompleted(nextDiv) {
+		var nextButton = $('#nextPageButton' + nr);
+		nextButton.html('' + nextButton.attr('data-text'));
+		if (callback) {
+			callback();
+		}
+		var m = next + pages.max;
+		var more = $('#nextPage' + nr + m);
+		nextButton.show();
+		var addAll = $('.addallwrap');
+		addAll.hide();
+		$('#searchTextLegend').hide();
+		if(more.length != 1) {
+    	   addAll.show();
+		   nextButton.hide();
+		}
+		if ((next + pages.max) >= pages.total) {
+		  nextButton.fadeOut();
+     	  addAll.show();
+		}
+		if (!loadOK) {
+			return;
+		}
+		$('#pageLinkId' + nr + page()).addClass('cur');
+		$('#pagesResultText' + nr).html('Visar ' + Math.max(1, pages.start) + ' - ' + Math.min(pages.total, next + (pages.max - 1)) + ' av ' + pages.total);
+		loading = false;
+	}
+
+
+
+	function loadNext() {
+		var nextDiv = $('#nextPage' + nr + next);
+		if (nextDiv.length != 1) {
+			return;
+		}
+		if (loadOK) {
+			$('#nextPageButton' + nr).html('<img src="/static/7.08_1949/loading.svg" alt="Loading..." width="16" height="16"> Hämtar sida ' + page());
+		}
+		$('.userObjectsOnly').hide();
+		var url = nextUrl();
+		if(url=='x') {
+		  return;
+		}
+		nextDiv.load(url, function(response, status, xhr) {
+			if (xhr.status == 200) {
+				loadOK = true;
+		        $('#colorExplanationList').append(nextDiv.find('.colorInnerWrapper'));
+			} else {
+				loadOK = false;
+				$("#errorPage" + nr).html("Unable to load page: " + page() + " (Error code:" + xhr.status + ")").fadeIn();
+			}
+			loadCompleted(nextDiv);
+		}).fadeIn("", function() {
+		});
+	}
+
+
+	function check(e) {
+	    stop(e);
+		if (loading) {
+			return;
+		}
+		if ((next + pages.max) < pages.total) {
+			loading = true;
+			next += pages.max;
+			loadNext();
+		}
+	}
+   
+   return check;
+}
+var postInits = [];
+
+function initFooter() {
+Stats3.enabled = true;
+objectSearcherFF = 'osFF/kth/web7_29';
+
+initSwitcher({locale: 'sv_SE', showWeek: true, firstDay: 1});
+if(typeof initPersonsSendMail === "function") { initPersonsSendMail(); }
+timers.push('Footer ' + ((new Date()).getTime() - beforeload) + 'ms');
+
+setTimeout(function() { for (var i = 0; i < postInits.length; i++) { postInits[i](); } }, 200);
+}
+
+function makeDoubleDelegate(first, second) {
+    return function() {
+        if (first) {
+            first();
+        }
+        if (second) {
+            second();
+        }
+    }
+}
+
+window.onload = makeDoubleDelegate(window.onload, function() { loadScript('/static/7.08_1949/min.js', initFooter); } );
+timers.push('PageEnd ' + ((new Date()).getTime() - beforeload) + 'ms');
+</script>
+<script type="text/javascript">
+    window._mfq = window._mfq || [];
+    (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript"; mf.async = true;
+        mf.src = "//cdn.mouseflow.com/projects/65910881-7233-45e0-98bb-674afa23b4ea.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+    })();
+    window.smartlook||(function(d) {var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);})(document);smartlook('init', '9236d448a954ecfc531c43d83b02387e205df23f');smartlook('masterForms');
+</script><br><br><br>
+  </body>
+  </html>
